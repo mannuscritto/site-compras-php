@@ -5,21 +5,14 @@
         exit;
     }
     echo "<h1>Bem vindo, " . $_COOKIE['admin_username'] . "!</h1>";
+    echo "<p><a target='_blank' href='http://localhost:8080/'>Acesse PHPMyAdmin</a></p>";
 
     if (isset($_GET['pagina'])) {
         $page = $_GET['pagina'];
         if ($page == 'produtos') {
-            include 'views/produtos.php';
+           include 'views/produtos.php';
         }
+    } else {
+        include 'views/dashboard.php';
     }
 ?>
-
-<html lang="pt-br">
-    <head>
-        <title>Painel de Controle</title>
-        <meta charset="utf-8"/>
-    </head>
-    <body>
-        <h1></h1>
-    </body>
-</html>
