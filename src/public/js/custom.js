@@ -1,3 +1,6 @@
+import {getProducts} from  './consume-api.js'
+import {getLocalStorageItem, setLocalStorageItem} from './helpers.js'
+
 window.onload = async () => {
     checarDados()
     
@@ -178,24 +181,6 @@ const onClickVisualizar = () => {
     }
 }
 
-const setLocalStorageItem = (nome, valor) => {
-    if (typeof nome === "string") {
-        valor = JSON.stringify(valor)
-        if (typeof  valor === "string") {
-            window.localStorage.setItem(nome, valor)
-        }
-    }
-    return null
-}
-
-const getLocalStorageItem = (nome) => {
-    let valor = window.localStorage.getItem(nome)
-    if (valor != null) {
-        return JSON.parse(valor)
-    }
-    return null
-}
-
 const localStoragePushItem = (name, elem) => {
     let item = getLocalStorageItem(name) || new Array()
 
@@ -243,11 +228,9 @@ const checarDados = async () => {
         let req = await fetch('./json/marcas.json')
         let dados = await req.json()
         setLocalStorageItem('marcas', dados)
-    } else {
     }
-    if (getLocalStorageItem('placas') == null) {
-        loadPlacas()
-    }
+
+    getProducts()
 }
 
 const calcularNotaProduto = (notas) => {
@@ -297,9 +280,11 @@ const mostrarProdutos = (produtos, container, titulo, cols = 4) => {
 
     const categorias = new Array('Low End', 'Mid End', 'High End')
 
-    for (produto of produtos) {
+    for (const produto of produtos) {
+        // apenas temporário
+        produto.preco_base = parseFloat(produto.preco_base)
 
-        let campoNota = calcularNotaProduto(produto.notas)
+        //let campoNota = calcularNotaProduto(produto.notas)
         let etiquetaDesconto = produto.desconto > 0 ? `<span class="sale">-${produto.desconto}%</span>` : ''
         let isFav = checarStatusFav(produto.id)
         //console.log(`${produto.id} favoritado? ${isFav}`)
@@ -307,7 +292,8 @@ const mostrarProdutos = (produtos, container, titulo, cols = 4) => {
         container.innerHTML += `<div class="col-md-${cols} col-xs-6">
             <div class="product" data-id="${produto.id}" data-fav="${isFav}">
                 <div class="product-img">
-                    <img src="./img/${produto.imagens[0]}" alt="${produto.imagens[0]}">
+                    <!--<img src="./img/${produto.imagens[0]}" alt="${produto.imagens[0]}">-->
+                    <img src="./img/MSI RX 590.jpg" alt="MSI RX 590">
                     <div class="product-label">
                         ${etiquetaDesconto}
                         ${produto.novo ? `<span class="new">NOVO</span>` : ``}
@@ -320,9 +306,11 @@ const mostrarProdutos = (produtos, container, titulo, cols = 4) => {
                         ${(produto.preco_base * (1 - (produto.desconto / 100))).toFixed(2).toString().replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
                         ${produto.desconto > 0 ? `<del class="product-old-price">${produto.preco_base.toFixed(2).toString().replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</del>`: ''}
                     </h4>
-                    <div class="product-rating">
-                        ${campoNota}
-                    </div>
+                    <div class="product-rating"><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i></div>
                     <div class="product-btns">
                         <button class="add-to-wishlist"><i class="fa fa-heart${isFav ? '' : '-o'}"></i><span class="tooltipp">Favoritar</span></button>
                         <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Visualizar</span></button>
@@ -368,7 +356,7 @@ const mostrarPaginacao = (targetElement, sourceItens) => {
 
 const filtrarPlacas = (placas, marcas, termos = [], categoria) => {
     let filtradas = new Array()
-
+    
     for (placa of placas) {
     if (placa.estoque > 0) {
         if (categoria == 0 || categoria == placa.categoria) {
@@ -510,7 +498,7 @@ const carregarCarrinho = () => {
 }
 
 const mostrarRecomendadas = (container) => {
-    const placasTotal = getLocalStorageItem('placas').placas
+    const placasTotal = getLocalStorageItem('placas')
     const placas = placasTotal.slice(0, 4)
 
     mostrarProdutos(placas, container, 'Recomendadas', 3)
@@ -842,7 +830,7 @@ return cookiesKeyValuePairs.map(function(cookie) {
 const getCookie = (name = '') => {
 let cookies = getAllCookies()
 
-for (cookie of cookies) {
+for (const cookie of cookies) {
     if (cookie.name.toUpperCase() == name.toUpperCase()) {
         return cookie.value
     }

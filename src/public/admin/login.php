@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (isset($_POST['username']) && isset($_POST['password'])) {
-        include '../db.php';
+        include '../../db.php';
         $username = $_POST['username'];
         $password = $_POST['password'];
         $sql = "SELECT id, usuario FROM admin WHERE usuario LIKE '$username' and senha LIKE '$password'";
