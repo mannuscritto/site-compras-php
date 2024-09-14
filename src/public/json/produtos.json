@@ -1,0 +1,1996 @@
+{
+    "placas":[
+        {
+            "id":1,
+            "modelo":"RTX 2080 TI",
+            "categoria":3,
+            "preco_base":"5.879,90",
+            "desconto":15,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti 5.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Ti WindForce 11GB, GDDR6 - GV-N208TWF3-11GC",
+            "notas":[
+                1,
+                16,
+                5,
+                175,
+                197
+            ],
+            "estoque":34,
+            "novo":false
+        },
+        {
+            "id":2,
+            "modelo":"RTX 2080 TI",
+            "categoria":3,
+            "preco_base":"5.899,90",
+            "desconto":0,
+            "fabricante":2,
+            "imagens":[
+                "Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti.jpg",
+                "Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 1.jpg",
+                "Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 2.jpg",
+                "Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 3.jpg",
+                "Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 4.jpg",
+                "Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti Triple Fan 11GB, GDDR6, 352 bits, PCI-E 3.0 - ZT-T20810F-10P",
+            "notas":[
+                3,
+                10,
+                4,
+                150,
+                41
+            ],
+            "estoque":12,
+            "novo":false
+        },
+        {
+            "id":3,
+            "modelo":"RTX 2080 TI",
+            "categoria":3,
+            "preco_base":"6.946,90",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Ti.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Ti 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Ti 3.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Ti 4.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Ti 5.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Ti 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Ti XC Ultra Gaming 11GB, GDDR6 - 11G-P4-2383-KR",
+            "notas":[
+                7,
+                15,
+                16,
+                52,
+                9
+            ],
+            "estoque":15,
+            "novo":false
+        },
+        {
+            "id":4,
+            "modelo":"RTX 2080 TI",
+            "categoria":3,
+            "preco_base":"7.439,90",
+            "desconto":2,
+            "fabricante":4,
+            "imagens":[
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Ti.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Ti 1.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Ti 2.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Ti 3.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Ti 4.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Ti 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Ti Xtreme Waterforce 11G, GDDR6 - GV-N208TAORUSX W-11GC",
+            "notas":[
+                0,
+                18,
+                3,
+                70,
+                334
+            ],
+            "estoque":32,
+            "novo":false
+        },
+        {
+            "id":5,
+            "modelo":"RTX 2080 TI",
+            "categoria":3,
+            "preco_base":"8.650,47",
+            "desconto":12,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2080 Ti.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2080 Ti 1.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2080 Ti 2.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2080 Ti 3.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2080 Ti 4.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2080 Ti 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI NVIDIA GeForce RTX 2080 Ti Gaming X Trio AMP 11GB, GDDR6",
+            "notas":[
+                1,
+                15,
+                19,
+                242,
+                349
+            ],
+            "estoque":2,
+            "novo":false
+        },
+        {
+            "id":6,
+            "modelo":"RTX 2080 TI",
+            "categoria":3,
+            "preco_base":"7.999,90",
+            "desconto":15,
+            "fabricante":6,
+            "imagens":[
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti 1.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti 2.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti 3.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti 4.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti 5.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti 6.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti 7.jpg"
+            ],
+            "descricao":"Placa de Vídeo Galax NVIDIA GeForce RTX 2080 Ti HOF 11GB, GDDR6 - 28IULBUCV6DH",
+            "notas":[
+                1,
+                12,
+                13,
+                85,
+                233
+            ],
+            "estoque":23,
+            "novo":false
+        },
+        {
+            "id":7,
+            "modelo":"RTX 2080 SUPER",
+            "categoria":3,
+            "preco_base":"4.999,90",
+            "desconto":2,
+            "fabricante":7,
+            "imagens":[
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super 1.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super 2.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super 3.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super 4.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super 5.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Aorus NVIDIA GeForce RTX 2080 Super Waterforce WB, 8GB, GDDR6 - GV-N208SAORUS WB-8GC",
+            "notas":[
+                9,
+                18,
+                9,
+                124,
+                335
+            ],
+            "estoque":300,
+            "novo":true
+        },
+        {
+            "id":8,
+            "modelo":"RTX 2080 SUPER",
+            "categoria":3,
+            "preco_base":"3.899,90",
+            "desconto":25,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Super.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Super 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Super 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Super 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Super 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Super 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2080 Super Turbo, 8G, GDDR6 - GV-N208STURBO-8GC",
+            "notas":[
+                7,
+                1,
+                0,
+                253,
+                132
+            ],
+            "estoque":200,
+            "novo":true
+        },
+        {
+            "id":9,
+            "modelo":"RTX 2080 SUPER",
+            "categoria":3,
+            "preco_base":"4.299,90",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Super.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Super 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Super 2.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Super 3.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Super Black Gaming, 8GB, GDDR6 - 08G-P4-3081-KR",
+            "notas":[
+                0,
+                14,
+                18,
+                142,
+                246
+            ],
+            "estoque":600,
+            "novo":true
+        },
+        {
+            "id":10,
+            "modelo":"RTX 2080 SUPER",
+            "categoria":3,
+            "preco_base":"4.459,90",
+            "desconto":0,
+            "fabricante":6,
+            "imagens":[
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 SUPER.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 SUPER 1.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 SUPER 2.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 SUPER 3.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 SUPER 4.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 SUPER 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Galax NVIDIA GeForce RTX 2080 SUPER EX (1-Click OC) 8GB, GDDR6 - 28ISL6MDU9EX",
+            "notas":[
+                9,
+                19,
+                5,
+                90,
+                20
+            ],
+            "estoque":112,
+            "novo":true
+        },
+        {
+            "id":11,
+            "modelo":"RTX 2080 SUPER",
+            "categoria":3,
+            "preco_base":"4.469,90",
+            "desconto":0,
+            "fabricante":9,
+            "imagens":[
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2080 Super.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2080 Super 2.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2080 Super 3.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2080 Super 4.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2080 Super 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gainward NVIDIA GeForce RTX 2080 Super Phantom GLH, 8GB, GDDR6 - NE6208SH20P2-1040P",
+            "notas":[
+                7,
+                7,
+                13,
+                129,
+                164
+            ],
+            "estoque":123,
+            "novo":true
+        },
+        {
+            "id":12,
+            "modelo":"RTX 2080 SUPER",
+            "categoria":3,
+            "preco_base":"4.239,90",
+            "desconto":5,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI NVIDIA Geforce RTX 2080 Super.jpg",
+                "Placa de Vídeo MSI NVIDIA Geforce RTX 2080 Super 1.jpg",
+                "Placa de Vídeo MSI NVIDIA Geforce RTX 2080 Super 2.jpg",
+                "Placa de Vídeo MSI NVIDIA Geforce RTX 2080 Super 3.jpg",
+                "Placa de Vídeo MSI NVIDIA Geforce RTX 2080 Super 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI NVIDIA Geforce RTX 2080 Super Ventus OC, 8GB, GDDR6",
+            "notas":[
+                5,
+                16,
+                9,
+                179,
+                37
+            ],
+            "estoque":118,
+            "novo":false
+        },
+        {
+            "id":13,
+            "modelo":"RTX 2080",
+            "categoria":3,
+            "preco_base":"3.789,90",
+            "desconto":5,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 2.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 3.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 4.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce RTX 2080 Black Gaming 8GB, GDDR6 - 08G-P4-2081-KR",
+            "notas":[
+                6,
+                18,
+                11,
+                40,
+                121
+            ],
+            "estoque":87,
+            "novo":true
+        },
+        {
+            "id":14,
+            "modelo":"RTX 2080",
+            "categoria":3,
+            "preco_base":"4.050,90",
+            "desconto":10,
+            "fabricante":2,
+            "imagens":[
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2080.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2080 1.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2080 2.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2080 3.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2080 4.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2080 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Zotac NVIDIA GeForce RTX 2080 8GB, GDDR6 - ZT-T20800G-10P",
+            "notas":[
+                6,
+                9,
+                0,
+                174,
+                52
+            ],
+            "estoque":11,
+            "novo":false
+        },
+        {
+            "id":15,
+            "modelo":"RTX 2080",
+            "categoria":3,
+            "preco_base":"3.999,90",
+            "desconto":5,
+            "fabricante":6,
+            "imagens":[
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 2.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 3.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 4.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 5.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 6.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2080 7.jpg"
+            ],
+            "descricao":"Placa de Vídeo Galax NVIDIA GeForce RTX 2080 White EX (1-Click OC) 8GB, GDDR6 - 28NSL6MDU8W2",
+            "notas":[
+                4,
+                19,
+                7,
+                214,
+                280
+            ],
+            "estoque":30,
+            "novo":true
+        },
+        {
+            "id":16,
+            "modelo":"RTX 2070 SUPER",
+            "categoria":3,
+            "preco_base":"3.174,90",
+            "desconto":25,
+            "fabricante":9,
+            "imagens":[
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super 1.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super 2.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super 3.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super 4.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super 5.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super 6.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super 7.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gainward NVIDIA GeForce RTX 2070 Super Phantom, 8GB, GDDR6 - NE6207S019P2-1040P",
+            "notas":[
+                5,
+                0,
+                18,
+                294,
+                99
+            ],
+            "estoque":50,
+            "novo":false
+        },
+        {
+            "id":17,
+            "modelo":"RTX 2070 SUPER",
+            "categoria":3,
+            "preco_base":"3.099,90",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Video EVGA GeForce RTX 2070 Super.jpg",
+                "Placa de Video EVGA GeForce RTX 2070 Super 1.jpg",
+                "Placa de Video EVGA GeForce RTX 2070 Super 2.jpg",
+                "Placa de Video EVGA GeForce RTX 2070 Super 3.jpg",
+                "Placa de Video EVGA GeForce RTX 2070 Super 4.jpg",
+                "Placa de Video EVGA GeForce RTX 2070 Super 5.jpg"
+            ],
+            "descricao":"Placa de Video EVGA GeForce RTX 2070 Super XC Ultra Gaming, 8GB, GDDR6 - 08G-P4-3173-KR",
+            "notas":[
+                8,
+                14,
+                5,
+                112,
+                137
+            ],
+            "estoque":75,
+            "novo":true
+        },
+        {
+            "id":18,
+            "modelo":"RTX 2070 SUPER",
+            "categoria":3,
+            "preco_base":"2.999,90",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super 5.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super 6.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super 7.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 Super Gaming, 8GB, GDDR6 - GV-N207SGAMING OC-8GC",
+            "notas":[
+                8,
+                14,
+                14,
+                190,
+                248
+            ],
+            "estoque":100,
+            "novo":false
+        },
+        {
+            "id":19,
+            "modelo":"RTX 2070",
+            "categoria":3,
+            "preco_base":"2.973,90",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de vídeo MSI Geforce RTX 2070 Super.jpg",
+                "Placa de vídeo MSI Geforce RTX 2070 Super 1.jpg",
+                "Placa de vídeo MSI Geforce RTX 2070 Super 2.jpg",
+                "Placa de vídeo MSI Geforce RTX 2070 Super 3.jpg",
+                "Placa de vídeo MSI Geforce RTX 2070 Super 4.jpg"
+            ],
+            "descricao":"Placa de vídeo MSI Geforce RTX 2070 Super Ventus OC, 8GB, GDDR6",
+            "notas":[
+                8,
+                13,
+                12,
+                100,
+                92
+            ],
+            "estoque":16,
+            "novo":true
+        },
+        {
+            "id":20,
+            "modelo":"RTX 2070",
+            "categoria":3,
+            "preco_base":"3169,99",
+            "desconto":5,
+            "fabricante":10,
+            "imagens":[
+                "Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070 1.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070 2.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070 3.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070 4.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070 5.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Asus Dual NVIDIA GeForce RTX 2070 EVO 8GB, GDDR6 - DUAL-RTX2070-A8G-EVO",
+            "notas":[
+                7,
+                7,
+                2,
+                178,
+                52
+            ],
+            "estoque":17,
+            "novo":false
+        },
+        {
+            "id":21,
+            "modelo":"RTX 2070",
+            "categoria":3,
+            "preco_base":"2.859,90",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2070.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2070 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2070 2.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2070 3.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2070 4.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2070 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce RTX 2070 XC Gaming, 8GB, GDDR6 - 08G-P4-2172-KR",
+            "notas":[
+                1,
+                3,
+                0,
+                136,
+                70
+            ],
+            "estoque":24,
+            "novo":false
+        },
+        {
+            "id":22,
+            "modelo":"RTX 2070",
+            "categoria":3,
+            "preco_base":"2.879,90",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2070 WindForce 8G, GDDR6 - GV-N2070WF3-8GC",
+            "notas":[
+                2,
+                17,
+                11,
+                168,
+                4
+            ],
+            "estoque":20,
+            "novo":false
+        },
+        {
+            "id":23,
+            "modelo":"RTX 2070",
+            "categoria":3,
+            "preco_base":"3.099,90",
+            "desconto":10,
+            "fabricante":6,
+            "imagens":[
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2070.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2070 1.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2070 2.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2070 3.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2070 4.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce RTX 2070 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Galax NVIDIA GeForce RTX 2070 EX 8GB, GDDR6 - 27NSL6UCV1X",
+            "notas":[
+                0,
+                5,
+                8,
+                46,
+                192
+            ],
+            "estoque":65,
+            "novo":true
+        },
+        {
+            "id":24,
+            "modelo":"RTX 2070",
+            "categoria":3,
+            "preco_base":"3.195,90",
+            "desconto":10,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2070.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2070 1.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2070 2.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2070 3.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2070 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI NVIDIA GeForce RTX 2070 Gaming Z 8G, GDDR6",
+            "notas":[
+                8,
+                0,
+                13,
+                269,
+                121
+            ],
+            "estoque":34,
+            "novo":false
+        },
+        {
+            "id":25,
+            "modelo":"RTX 2070",
+            "categoria":3,
+            "preco_base":"3.299,90",
+            "desconto":15,
+            "fabricante":2,
+            "imagens":[
+                "Placa de Vídeo Zotac NVIDIA Geforce RTX 2070.jpg",
+                "Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 1.jpg",
+                "Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 2.jpg",
+                "Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 3.jpg",
+                "Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 4.jpg",
+                "Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 AMP Extreme Core Gaming 8GB, GDDR6 - ZT-T20700C-10P",
+            "notas":[
+                2,
+                1,
+                15,
+                166,
+                15
+            ],
+            "estoque":87,
+            "novo":false
+        },
+        {
+            "id":26,
+            "modelo":"RTX 2060 SUPER",
+            "categoria":3,
+            "preco_base":"2.664,90",
+            "desconto":10,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super 5.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super 6.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super 7.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 Super Windforce OC 8G, GDDR6 - GV-N206SWF2OC-8GD",
+            "notas":[
+                9,
+                1,
+                14,
+                144,
+                57
+            ],
+            "estoque":51,
+            "novo":false
+        },
+        {
+            "id":27,
+            "modelo":"RTX 2060 SUPER",
+            "categoria":3,
+            "preco_base":"2.759,90",
+            "desconto":10,
+            "fabricante":10,
+            "imagens":[
+                "Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 2060 Super.jpg",
+                "Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 2060 Super 1.jpg",
+                "Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 2060 Super 2.jpg",
+                "Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 2060 Super 3.jpg",
+                "Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 2060 Super 4.jpg",
+                "Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 2060 Super 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 2060 Super 8GB, GDDR6 - ROG-STRIX-RTX2060S-O8G-GAMING",
+            "notas":[
+                5,
+                7,
+                3,
+                20,
+                18
+            ],
+            "estoque":25,
+            "novo":false
+        },
+        {
+            "id":28,
+            "modelo":"RTX 2060 SUPER",
+            "categoria":3,
+            "preco_base":"2.399,90",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de vídeo MSI Geforce RTX 2060 Super.jpg",
+                "Placa de vídeo MSI Geforce RTX 2060 Super 1.jpg",
+                "Placa de vídeo MSI Geforce RTX 2060 Super 2.jpg",
+                "Placa de vídeo MSI Geforce RTX 2060 Super 3.jpg",
+                "Placa de vídeo MSI Geforce RTX 2060 Super 4.jpg"
+            ],
+            "descricao":"Placa de vídeo MSI Geforce RTX 2060 Super Gaming X, 8GB, GDDR6",
+            "notas":[
+                4,
+                14,
+                4,
+                240,
+                343
+            ],
+            "estoque":89,
+            "novo":true
+        },
+        {
+            "id":29,
+            "modelo":"RTX 2060 SUPER",
+            "categoria":3,
+            "preco_base":"2.349,90",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Video EVGA GeForce RTX 2060 Super.jpg",
+                "Placa de Video EVGA GeForce RTX 2060 Super 1.jpg",
+                "Placa de Video EVGA GeForce RTX 2060 Super 2.jpg",
+                "Placa de Video EVGA GeForce RTX 2060 Super 3.jpg",
+                "Placa de Video EVGA GeForce RTX 2060 Super 4.jpg",
+                "Placa de Video EVGA GeForce RTX 2060 Super 5.jpg"
+            ],
+            "descricao":"Placa de Video EVGA GeForce RTX 2060 Super SC Ultra Gaming, 8GB, GDDR6 - 08G-P4-3067-KR",
+            "notas":[
+                3,
+                17,
+                18,
+                247,
+                385
+            ],
+            "estoque":80,
+            "novo":""
+        },
+        {
+            "id":30,
+            "modelo":"RTX 2060 SUPER",
+            "categoria":3,
+            "preco_base":"2.599,90",
+            "desconto":5,
+            "fabricante":2,
+            "imagens":[
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 1.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 2.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 3.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 4.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER AMP Extreme 8GB, GDDR6 - ZT-T20610B-10P",
+            "notas":[
+                0,
+                11,
+                10,
+                119,
+                119
+            ],
+            "estoque":99,
+            "novo":true
+        },
+        {
+            "id":31,
+            "modelo":"RTX 2060 SUPER",
+            "categoria":3,
+            "preco_base":"2.707,90",
+            "desconto":0,
+            "fabricante":9,
+            "imagens":[
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2060 Super.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2060 Super 1.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2060 Super 2.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2060 Super 3.jpg",
+                "Placa de Vídeo Gainward NVIDIA GeForce RTX 2060 Super 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gainward NVIDIA GeForce RTX 2060 Super Phantom GS, 8GB, GDDR6 - NE6206ST19P2-1061P",
+            "notas":[
+                7,
+                11,
+                3,
+                282,
+                141
+            ],
+            "estoque":250,
+            "novo":true
+        },
+        {
+            "id":32,
+            "modelo":"RTX 2060 SUPER",
+            "categoria":3,
+            "preco_base":"2.649,90",
+            "desconto":0,
+            "fabricante":4,
+            "imagens":[
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super 1.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super 2.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super 3.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super 4.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super 5.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super 6.jpg",
+                "Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super 7.jpg"
+            ],
+            "descricao":"Placa de Vídeo Aorus NVIDIA GeForce RTX 2060 Super, 8GB, GDDR6 - GV-N206SAORUS-8GC",
+            "notas":[
+                4,
+                0,
+                17,
+                280,
+                14
+            ],
+            "estoque":130,
+            "novo":true
+        },
+        {
+            "id":33,
+            "modelo":"RTX 2060",
+            "categoria":2,
+            "preco_base":"2.435,90",
+            "desconto":20,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 5.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce RTX 2060 WindForce OC 6G, GDDR6 - GV-N2060WF2OC-6GD (Rev. 2.0)",
+            "notas":[
+                4,
+                1,
+                11,
+                6,
+                158
+            ],
+            "estoque":97,
+            "novo":false
+        },
+        {
+            "id":34,
+            "modelo":"RTX 2060",
+            "categoria":2,
+            "preco_base":"2.099,90",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2060.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2060 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2060 2.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2060 3.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce RTX 2060 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce RTX 2060 SC Ultra Gaming, 6GB, GDDR6 - 06G-P4-2067-KR",
+            "notas":[
+                5,
+                10,
+                18,
+                141,
+                173
+            ],
+            "estoque":15,
+            "novo":false
+        },
+        {
+            "id":35,
+            "modelo":"RTX 2060",
+            "categoria":2,
+            "preco_base":"1.929,90",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2060.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2060 1.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2060 2.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2060 3.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce RTX 2060 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI NVIDIA GeForce RTX 2060 Ventus 6G OC, GDDR6",
+            "notas":[
+                7,
+                7,
+                15,
+                235,
+                142
+            ],
+            "estoque":2,
+            "novo":false
+        },
+        {
+            "id":36,
+            "modelo":"GTX 1660 TI",
+            "categoria":2,
+            "preco_base":"1.599,90",
+            "desconto":0,
+            "fabricante":6,
+            "imagens":[
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti 1.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti 2.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti 3.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti 4.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti 5.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Galax NVIDIA GeForce GTX 1660 Ti 1-Click OC 6GB, GDDR6 - 60IRL7DSY91C",
+            "notas":[
+                4,
+                12,
+                7,
+                302,
+                34
+            ],
+            "estoque":93,
+            "novo":false
+        },
+        {
+            "id":37,
+            "modelo":"GTX 1660 TI",
+            "categoria":2,
+            "preco_base":"1.999,90",
+            "desconto":5,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1660 Ti.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1660 Ti 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1660 Ti 2.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1660 Ti 3.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1660 Ti 4.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1660 Ti 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce GTX 1660 Ti SC Ultra Gaming, 6GB, GDDR6 - 06G-P4-1667-KR",
+            "notas":[
+                7,
+                12,
+                15,
+                30,
+                68
+            ],
+            "estoque":10,
+            "novo":false
+        },
+        {
+            "id":38,
+            "modelo":"GTX 1660 TI",
+            "categoria":2,
+            "preco_base":"1.799,90",
+            "desconto":0,
+            "fabricante":2,
+            "imagens":[
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 1.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 2.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 3.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 4.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti AMP! - ZT-T16610D-10M",
+            "notas":[
+                2,
+                18,
+                11,
+                198,
+                4
+            ],
+            "estoque":12,
+            "novo":true
+        },
+        {
+            "id":39,
+            "modelo":"GTX 1660 TI",
+            "categoria":2,
+            "preco_base":"1.599,90",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti 5.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Ti WindForce OC 6G, GDDR6 - GV-N166TWF2OC-6GD",
+            "notas":[
+                9,
+                6,
+                0,
+                282,
+                365
+            ],
+            "estoque":25,
+            "novo":false
+        },
+        {
+            "id":40,
+            "modelo":"GTX 1660 TI",
+            "categoria":2,
+            "preco_base":"1.549,90",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 Ti.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 Ti 1.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 Ti 2.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 Ti 3.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 Ti 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI NVIDIA GeForce GTX 1660 Ti Ventus XS 6G OC, GDDR6",
+            "notas":[
+                8,
+                5,
+                11,
+                2,
+                343
+            ],
+            "estoque":100,
+            "novo":true
+        },
+        {
+            "id":41,
+            "modelo":"GTX 1660 TI",
+            "categoria":2,
+            "preco_base":"1.439,90",
+            "desconto":0,
+            "fabricante":11,
+            "imagens":[
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti 1.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti 2.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti 3.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti 4.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti 5.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo PCYes NVIDIA GeForce GTX 1660 Ti, 6GB, GDDR6 - PA166019206G6",
+            "notas":[
+                3,
+                10,
+                4,
+                44,
+                266
+            ],
+            "estoque":97,
+            "novo":true
+        },
+        {
+            "id":42,
+            "modelo":"GTX 1660",
+            "categoria":2,
+            "preco_base":"1.139,90",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 OC 6G, GDDR5 - GV-N1660OC-6GD",
+            "notas":[
+                3,
+                17,
+                10,
+                235,
+                140
+            ],
+            "estoque":98,
+            "novo":false
+        },
+        {
+            "id":43,
+            "modelo":"GTX 1660",
+            "categoria":2,
+            "preco_base":"1075,98",
+            "desconto":0,
+            "fabricante":6,
+            "imagens":[
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 1.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 2.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 3.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 4.jpg",
+                "Placa de Vídeo Galax NVIDIA GeForce GTX 1660 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Galax NVIDIA GeForce GTX 1660 1-Click OC, 6GB, GDDR5 - 60SRH7DSY91C",
+            "notas":[
+                5,
+                15,
+                2,
+                297,
+                236
+            ],
+            "estoque":50,
+            "novo":false
+        },
+        {
+            "id":44,
+            "modelo":"GTX 1660",
+            "categoria":2,
+            "preco_base":"1.189,90",
+            "desconto":10,
+            "fabricante":10,
+            "imagens":[
+                "Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660 1.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660 2.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660 3.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660 4.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660 5.jpg",
+                "Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Asus Dual NVIDIA GeForce GTX 1660 6GB, GDDR5 - DUAL-GTX1660-A6G-EVO",
+            "notas":[
+                9,
+                17,
+                13,
+                255,
+                32
+            ],
+            "estoque":75,
+            "novo":true
+        },
+        {
+            "id":45,
+            "modelo":"GTX 1660",
+            "categoria":2,
+            "preco_base":"1.419,90",
+            "desconto":15,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 1.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 2.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 3.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1660 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI NVIDIA GeForce GTX 1660 Gaming X 6G, GDDR5",
+            "notas":[
+                5,
+                18,
+                17,
+                103,
+                221
+            ],
+            "estoque":15,
+            "novo":true
+        },
+        {
+            "id":46,
+            "modelo":"GTX 1650",
+            "categoria":2,
+            "preco_base":"927,99",
+            "desconto":5,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1650.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1650 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1650 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1650 3.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1650 4.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1650 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1650 OC 4G, GDDR5 - GV-N1650OC-4GD",
+            "notas":[
+                6,
+                4,
+                7,
+                178,
+                316
+            ],
+            "estoque":135,
+            "novo":false
+        },
+        {
+            "id":47,
+            "modelo":"GTX 1650",
+            "categoria":2,
+            "preco_base":"909,99",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1650.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1650 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1650 2.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1650 3.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1650 4.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1650 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce GTX 1650 SC Ultra Gaming 4GB, GDDR5 - 04G-P4-1057-KR",
+            "notas":[
+                6,
+                10,
+                10,
+                269,
+                102
+            ],
+            "estoque":300,
+            "novo":true
+        },
+        {
+            "id":48,
+            "modelo":"GTX 1650",
+            "categoria":2,
+            "preco_base":"889,99",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1650 ,.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1650 1.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1650 2.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1650 3.jpg",
+                "Placa de Vídeo MSI NVIDIA GeForce GTX 1650 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI NVIDIA GeForce GTX 1650 Ventus XS 4G OC, GDDR5",
+            "notas":[
+                4,
+                3,
+                10,
+                219,
+                2
+            ],
+            "estoque":250,
+            "novo":false
+        },
+        {
+            "id":49,
+            "modelo":"GTX 1650",
+            "categoria":2,
+            "preco_base":"879,99",
+            "desconto":0,
+            "fabricante":2,
+            "imagens":[
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1650.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 1.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 2.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 3.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 4.jpg",
+                "Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 4GB, GDDR5 - ZT-T16500F-10L",
+            "notas":[
+                3,
+                9,
+                13,
+                116,
+                215
+            ],
+            "estoque":212,
+            "novo":false
+        },
+        {
+            "id":50,
+            "modelo":"GTX 1650",
+            "categoria":2,
+            "preco_base":"729,99",
+            "desconto":0,
+            "fabricante":11,
+            "imagens":[
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1650.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1650 1.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1650 2.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1650 3.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1650 4.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1650 5.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1650 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo PCYes NVIDIA GeForce GTX 1650, 4GB, GDDR5 - PA165012804G5",
+            "notas":[
+                4,
+                8,
+                6,
+                81,
+                269
+            ],
+            "estoque":254,
+            "novo":false
+        },
+        {
+            "id":51,
+            "modelo":"GTX 1060",
+            "categoria":2,
+            "preco_base":"849,99",
+            "desconto":0,
+            "fabricante":3,
+            "imagens":[
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1060.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1060 1.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1060 2.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1060 3.jpg",
+                "Placa de Vídeo EVGA NVIDIA GeForce GTX 1060 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo EVGA NVIDIA GeForce GTX 1060 3GB SC Gaming, GDDR5 - 03G-P4-6162-KR",
+            "notas":[
+                6,
+                2,
+                10,
+                113,
+                147
+            ],
+            "estoque":10,
+            "novo":false
+        },
+        {
+            "id":52,
+            "modelo":"GTX 1050 TI",
+            "categoria":1,
+            "preco_base":"609,90",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1050 Ti.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1050 Ti 1.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1050 Ti 2.jpg",
+                "Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1050 Ti 3.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1050 Ti OC 4GB, GDDR5 - GV-N105TOC-4GL",
+            "notas":[
+                3,
+                13,
+                3,
+                205,
+                279
+            ],
+            "estoque":15,
+            "novo":false
+        },
+        {
+            "id":53,
+            "modelo":"GTX 1050 TI",
+            "categoria":1,
+            "preco_base":"799,99",
+            "desconto":0,
+            "fabricante":11,
+            "imagens":[
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1050 Ti.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1050 Ti 1.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1050 Ti 2.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1050 Ti 3.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1050 Ti 4.jpg",
+                "Placa de Vídeo PCYes NVIDIA GeForce GTX 1050 Ti 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo PCYes NVIDIA GeForce GTX 1050 Ti 4GB GDDR5 - PA1050TI12804G5DF",
+            "notas":[
+                0,
+                15,
+                12,
+                196,
+                156
+            ],
+            "estoque":14,
+            "novo":false
+        },
+        {
+            "id":54,
+            "modelo":"RX 5700 XT",
+            "categoria":3,
+            "preco_base":"2.379,90",
+            "desconto":10,
+            "fabricante":12,
+            "imagens":[
+                "Placa de Vídeo PowerColor AMD Radeon D6 RX5700 XT.jpg",
+                "Placa de Vídeo PowerColor AMD Radeon D6 RX5700 XT 1.jpg",
+                "Placa de Vídeo PowerColor AMD Radeon D6 RX5700 XT 2.jpg",
+                "Placa de Vídeo PowerColor AMD Radeon D6 RX5700 XT 3.jpg"
+            ],
+            "descricao":"Placa de Vídeo PowerColor AMD Radeon D6 RX5700 XT 8GB, GDDR6 - G00318800G",
+            "notas":[
+                4,
+                19,
+                8,
+                270,
+                84
+            ],
+            "estoque":12,
+            "novo":false
+        },
+        {
+            "id":55,
+            "modelo":"RX 5700 XT",
+            "categoria":3,
+            "preco_base":"2.179,90",
+            "desconto":10,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI Radeon RX 5700 XT.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 XT 1.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 XT 2.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 XT 3.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 XT 4.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 XT 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI Radeon RX 5700 XT 8G, 8GB, GDDR6",
+            "notas":[
+                4,
+                19,
+                13,
+                122,
+                206
+            ],
+            "estoque":2,
+            "novo":false
+        },
+        {
+            "id":56,
+            "modelo":"RX 5700 XT",
+            "categoria":3,
+            "preco_base":"2.099,90",
+            "desconto":10,
+            "fabricante":8,
+            "imagens":[
+                "Placa de Vídeo Sapphire Radeon RX 5700XT.jpg",
+                "Placa de Vídeo Sapphire Radeon RX 5700XT 1.jpg",
+                "Placa de Vídeo Sapphire Radeon RX 5700XT 2.jpg",
+                "Placa de Vídeo Sapphire Radeon RX 5700XT 3.jpg",
+                "Placa de Vídeo Sapphire Radeon RX 5700XT 4.jpg",
+                "Placa de Vídeo Sapphire Radeon RX 5700XT 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Sapphire Radeon RX 5700XT 8G, GDDR6 - 21293-01",
+            "notas":[
+                0,
+                2,
+                1,
+                132,
+                259
+            ],
+            "estoque":8,
+            "novo":false
+        },
+        {
+            "id":57,
+            "modelo":"RX 5700 XT",
+            "categoria":3,
+            "preco_base":"2.603,90",
+            "desconto":0,
+            "fabricante":7,
+            "imagens":[
+                "Placa de Video XFX AMD Radeon RX5700 XT.jpg",
+                "Placa de Video XFX AMD Radeon RX5700 XT 1.jpg",
+                "Placa de Video XFX AMD Radeon RX5700 XT 2.jpg",
+                "Placa de Video XFX AMD Radeon RX5700 XT 3.jpg",
+                "Placa de Video XFX AMD Radeon RX5700 XT 4.jpg",
+                "Placa de Video XFX AMD Radeon RX5700 XT 5.jpg"
+            ],
+            "descricao":"Placa de Video XFX AMD Radeon RX5700 XT, 8GB, GDDR6 - RX-57XT8MFD6",
+            "notas":[
+                8,
+                8,
+                11,
+                1,
+                80
+            ],
+            "estoque":7,
+            "novo":true
+        },
+        {
+            "id":58,
+            "modelo":"RX 5700 XT",
+            "categoria":3,
+            "preco_base":"2.469,90",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT 1.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT 2.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT 3.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT 4.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT 5.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte AMD Radeon RX 5700 XT Gaming OC, 8GB, GDDR6 - GV-R57XTGAMING OC-8GD",
+            "notas":[
+                0,
+                9,
+                3,
+                281,
+                251
+            ],
+            "estoque":15,
+            "novo":true
+        },
+        {
+            "id":59,
+            "modelo":"RX 5700 XT",
+            "categoria":3,
+            "preco_base":"2.559,90",
+            "desconto":0,
+            "fabricante":10,
+            "imagens":[
+                "Placa de Vídeo ASUS AMD TUF3 RX 5700 XT OC.jpg",
+                "Placa de Vídeo ASUS AMD TUF3 RX 5700 XT OC 1.jpg",
+                "Placa de Vídeo ASUS AMD TUF3 RX 5700 XT OC 2.jpg",
+                "Placa de Vídeo ASUS AMD TUF3 RX 5700 XT OC 3.jpg",
+                "Placa de Vídeo ASUS AMD TUF3 RX 5700 XT OC 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo ASUS AMD TUF3 RX 5700 XT OC 8G, GDDR6 - TUF 3-RX5700XT-O8G-GAMING",
+            "notas":[
+                1,
+                1,
+                12,
+                138,
+                189
+            ],
+            "estoque":3,
+            "novo":true
+        },
+        {
+            "id":60,
+            "modelo":"RX 5700",
+            "categoria":2,
+            "preco_base":"1.929,90",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI Radeon RX 5700.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 1.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 2.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 3.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 4.jpg",
+                "Placa de Vídeo MSI Radeon RX 5700 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI Radeon RX 5700 8G, 8GB, GDDR6",
+            "notas":[
+                1,
+                7,
+                17,
+                212,
+                8
+            ],
+            "estoque":4,
+            "novo":false
+        },
+        {
+            "id":61,
+            "modelo":"RX 5700",
+            "categoria":2,
+            "preco_base":"2.099,90",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 1.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 2.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 3.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 4.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 5.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 5700 6.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte AMD Radeon RX 5700 Gaming OC, 8GB, GDDR6 - GV-R57GAMING OC-8GD",
+            "notas":[
+                9,
+                18,
+                9,
+                41,
+                345
+            ],
+            "estoque":9,
+            "novo":false
+        },
+        {
+            "id":62,
+            "modelo":"RX 5700",
+            "categoria":2,
+            "preco_base":"2.099,90",
+            "desconto":0,
+            "fabricante":8,
+            "imagens":[
+                "Placa de Vídeo Sapphire AMD PULSE RX 5700.jpg",
+                "Placa de Vídeo Sapphire AMD PULSE RX 5700 1.jpg",
+                "Placa de Vídeo Sapphire AMD PULSE RX 5700 2.jpg",
+                "Placa de Vídeo Sapphire AMD PULSE RX 5700 3.jpg",
+                "Placa de Vídeo Sapphire AMD PULSE RX 5700 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo Sapphire AMD PULSE RX 5700 8GB, GDDR6 - 11294-01-20G",
+            "notas":[
+                3,
+                7,
+                10,
+                30,
+                142
+            ],
+            "estoque":7,
+            "novo":false
+        },
+        {
+            "id":63,
+            "modelo":"RX 5700",
+            "categoria":2,
+            "preco_base":"2.075,90",
+            "desconto":0,
+            "fabricante":10,
+            "imagens":[
+                "Placa de Vídeo ASUS AMD DUAL RX 5700.jpg",
+                "Placa de Vídeo ASUS AMD DUAL RX 5700 1.jpg",
+                "Placa de Vídeo ASUS AMD DUAL RX 5700 2.jpg",
+                "Placa de Vídeo ASUS AMD DUAL RX 5700 3.jpg",
+                "Placa de Vídeo ASUS AMD DUAL RX 5700 4.jpg",
+                "Placa de Vídeo ASUS AMD DUAL RX 5700 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo ASUS AMD DUAL RX 5700 OC 8G, GDDR6 - DUAL-RX5700-O8G-EVO",
+            "notas":[
+                5,
+                13,
+                4,
+                136,
+                71
+            ],
+            "estoque":3,
+            "novo":false
+        },
+        {
+            "id":64,
+            "modelo":"RX 590",
+            "categoria":2,
+            "preco_base":"989,9",
+            "desconto":0,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte AMD Radeon RX 590.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 590 1.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 590 2.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 590 3.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 590 4.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 590 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte AMD Radeon RX 590 Gaming 8G, GDDR5 - GV-RX590GAMING-8GD",
+            "notas":[
+                1,
+                7,
+                15,
+                307,
+                362
+            ],
+            "estoque":15,
+            "novo":true
+        },
+        {
+            "id":65,
+            "modelo":"RX 590",
+            "categoria":2,
+            "preco_base":"1.444,90",
+            "desconto":15,
+            "fabricante":13,
+            "imagens":[
+                "Placa de Vídeo ASRock AMD Radeon RX 590.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 590 1.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 590 2.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 590 3.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 590 4.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 590 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo ASRock AMD Radeon RX 590 OC 8GB, Phantom Gaming X",
+            "notas":[
+                0,
+                4,
+                18,
+                185,
+                122
+            ],
+            "estoque":17,
+            "novo":true
+        },
+        {
+            "id":66,
+            "modelo":"RX 590",
+            "categoria":2,
+            "preco_base":"1.159,90",
+            "desconto":0,
+            "fabricante":12,
+            "imagens":[
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 1.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 2.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 3.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 8GB, GDDR5 - AXRX 590 8GBD5-DHD",
+            "notas":[
+                1,
+                16,
+                4,
+                213,
+                300
+            ],
+            "estoque":19,
+            "novo":true
+        },
+        {
+            "id":67,
+            "modelo":"RX 590",
+            "categoria":2,
+            "preco_base":"1.309,90",
+            "desconto":0,
+            "fabricante":7,
+            "imagens":[
+                "Placa de Vídeo XFX AMD Radeon RX 590.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 590 1.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 590 2.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 590 3.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 590 4.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 590 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo XFX AMD Radeon RX 590 FatBoy OC+ 8GB, GDDR5 - RX-590P8DFD6",
+            "notas":[
+                7,
+                19,
+                6,
+                32,
+                82
+            ],
+            "estoque":12,
+            "novo":true
+        },
+        {
+            "id":68,
+            "modelo":"RX 590",
+            "categoria":2,
+            "preco_base":"1.199,90",
+            "desconto":0,
+            "fabricante":8,
+            "imagens":[
+                "Placa de Vídeo Sapphire AMD Radeon RX 590.jpg",
+                "Placa de Vídeo Sapphire AMD Radeon RX 590 1.jpg",
+                "Placa de Vídeo Sapphire AMD Radeon RX 590 2.jpg",
+                "Placa de Vídeo Sapphire AMD Radeon RX 590 3.jpg",
+                "Placa de Vídeo Sapphire AMD Radeon RX 590 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo Sapphire AMD Radeon RX 590, 8GB, GDDR5 - 11289-01-20G",
+            "notas":[
+                5,
+                12,
+                18,
+                166,
+                115
+            ],
+            "estoque":12,
+            "novo":false
+        },
+        {
+            "id":69,
+            "modelo":"RX 590",
+            "categoria":2,
+            "preco_base":"1.399,90",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI AMD Radeon RX 590.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 590 1.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 590 2.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 590 4.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 590 3.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI AMD Radeon RX 590 Armor 8G OC, GDDR5",
+            "notas":[
+                8,
+                9,
+                12,
+                77,
+                45
+            ],
+            "estoque":12,
+            "novo":false
+        },
+        {
+            "id":71,
+            "modelo":"RX 580",
+            "categoria":2,
+            "preco_base":"864,99",
+            "desconto":0,
+            "fabricante":7,
+            "imagens":[
+                "Placa de Vídeo XFX AMD Radeon RX 580.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 580 1.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 580 2.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 580 3.jpg",
+                "Placa de Vídeo XFX AMD Radeon RX 580 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo XFX AMD Radeon RX 580 GTS XXX OC+ 8GB, GDDR5 - RX-580P8DFD6",
+            "notas":[
+                6,
+                10,
+                5,
+                28,
+                52
+            ],
+            "estoque":1,
+            "novo":false
+        },
+        {
+            "id":72,
+            "modelo":"RX 580",
+            "categoria":2,
+            "preco_base":"869,99",
+            "desconto":0,
+            "fabricante":10,
+            "imagens":[
+                "Placa de Vídeo Asus AMD Radeon RX 580.jpg",
+                "Placa de Vídeo Asus AMD Radeon RX 580 1.jpg",
+                "Placa de Vídeo Asus AMD Radeon RX 580 2.jpg",
+                "Placa de Vídeo Asus AMD Radeon RX 580 3.jpg",
+                "Placa de Vídeo Asus AMD Radeon RX 580 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo Asus AMD Radeon RX 580 OC 4GB, GDDR5 - DUAL-RX580-O4G",
+            "notas":[
+                1,
+                17,
+                16,
+                6,
+                230
+            ],
+            "estoque":12,
+            "novo":false
+        },
+        {
+            "id":74,
+            "modelo":"RX 570",
+            "categoria":2,
+            "preco_base":"669,99",
+            "desconto":0,
+            "fabricante":5,
+            "imagens":[
+                "Placa de Vídeo MSI AMD Radeon RX 570.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 570 1.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 570 2.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 570 3.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 570 4.jpg",
+                "Placa de Vídeo MSI AMD Radeon RX 570 5.jpg"
+            ],
+            "descricao":"Placa de Vídeo MSI AMD Radeon RX 570 Armor 4G OC, GDDR5",
+            "notas":[
+                6,
+                7,
+                19,
+                117,
+                47
+            ],
+            "estoque":34,
+            "novo":false
+        },
+        {
+            "id":75,
+            "modelo":"RX 560",
+            "categoria":1,
+            "preco_base":"472,99",
+            "desconto":0,
+            "fabricante":12,
+            "imagens":[
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 560.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 560 1.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 560 2.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 560 3.jpg"
+            ],
+            "descricao":"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 560 2GB, GDDR5 - AXRX 560 2GBD5-DHAV2",
+            "notas":[
+                8,
+                18,
+                16,
+                262,
+                52
+            ],
+            "estoque":130,
+            "novo":false
+        },
+        {
+            "id":76,
+            "modelo":"RX 560",
+            "categoria":1,
+            "preco_base":"978,35",
+            "desconto":30,
+            "fabricante":1,
+            "imagens":[
+                "Placa de Vídeo Gigabyte AMD Radeon RX 560.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 560 1.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 560 2.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 560 3.jpg",
+                "Placa de Vídeo Gigabyte AMD Radeon RX 560 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo Gigabyte AMD Radeon RX 560 Gaming OC 4G, GDDR5 - GV-RX560GAMINGOC-4GD (Rev. 2.0",
+            "notas":[
+                2,
+                6,
+                13,
+                263,
+                180
+            ],
+            "estoque":198,
+            "novo":false
+        },
+        {
+            "id":77,
+            "modelo":"RX 550",
+            "categoria":1,
+            "preco_base":"299,99",
+            "desconto":0,
+            "fabricante":12,
+            "imagens":[
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 1.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 2.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 3.jpg",
+                "Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 2GB, GDDR5 - AXRX 550 2GBD5-DHA/OC",
+            "notas":[
+                9,
+                6,
+                18,
+                65,
+                111
+            ],
+            "estoque":2,
+            "novo":false
+        },
+        {
+            "id":78,
+            "modelo":"RX 550",
+            "categoria":1,
+            "preco_base":"579,99",
+            "desconto":10,
+            "fabricante":11,
+            "imagens":[
+                "Placa de Vídeo PCYes AMD Radeon RX 550.jpg",
+                "Placa de Vídeo PCYes AMD Radeon RX 550 1.jpg",
+                "Placa de Vídeo PCYes AMD Radeon RX 550 2.jpg",
+                "Placa de Vídeo PCYes AMD Radeon RX 550 3.jpg",
+                "Placa de Vídeo PCYes AMD Radeon RX 550 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo PCYes AMD Radeon RX 550 4GB, GDDR5 - PJ550RX12804G5DF",
+            "notas":[
+                9,
+                18,
+                2,
+                101,
+                230
+            ],
+            "estoque":130,
+            "novo":false
+        },
+        {
+            "id":79,
+            "modelo":"RX 550",
+            "categoria":1,
+            "preco_base":"399,99",
+            "desconto":5,
+            "fabricante":13,
+            "imagens":[
+                "Placa de Vídeo ASRock AMD Radeon RX 550.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 550 1.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 550 2.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 550 3.jpg",
+                "Placa de Vídeo ASRock AMD Radeon RX 550 4.jpg"
+            ],
+            "descricao":"Placa de Vídeo ASRock AMD Radeon RX 550 Phantom Gaming 2G, GDDR5 - 90-GA0500-00UANF",
+            "notas":[
+                1,
+                1,
+                3,
+                301,
+                291
+            ],
+            "estoque":167,
+            "novo":false
+        }
+    ]
+}
