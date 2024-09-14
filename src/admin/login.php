@@ -24,7 +24,7 @@
     </head>
     <body>
         <form method="POST" action="login.php">
-            <input type="text" name="username" value="jhromero"/>
+            <input type="text" name="username" value="admin"/>
             <input type="password" name="password" />
             <input type="submit" value="Entrar" />
         </form>

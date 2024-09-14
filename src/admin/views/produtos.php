@@ -39,9 +39,10 @@
             $fab = $_POST['tFabricante'];
             $desc = $_POST['tDescricao'];
             $stock = $_POST['tEstoque'];
+            $novo = 0;
 
             if (isset($_POST['tNovo'])) {
-                $novo = TRUE;
+                $novo = 1;
             }
 
             include '../db.php';
