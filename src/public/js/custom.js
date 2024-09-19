@@ -92,8 +92,9 @@ const getParamAsArray = (nome, url = window.location.search) => {
 }
 
 const getPlacaById = id => {
-    const placas = getLocalStorageItem('placas').placas
-    let placa = placas[id-1]
+    const placas = getLocalStorageItem('placas')
+    const placa = placas.find(el => el.id == id)
+    
     if (placa == undefined) {
         return null
     } else {
@@ -134,7 +135,7 @@ const favoritar = (e) => {
 
 const onClickFavoritar = () => {
     const favBotoes = document.getElementsByClassName("add-to-wishlist")
-    for (botao of favBotoes) {
+    for (const botao of favBotoes) {
         botao.addEventListener('click', favoritar)
     }
 }
@@ -162,7 +163,7 @@ const colocarCarrinho = (e) => {
 
 const onClickCarrinho = () => {
     const cartBotoes = document.getElementsByClassName("add-to-cart-btn")
-    for (botao of cartBotoes) {
+    for (const botao of cartBotoes) {
         botao.addEventListener('click', colocarCarrinho)
     }
 }
@@ -171,12 +172,12 @@ const visualizarProduto = (e) => {
     let botao = e.currentTarget
     let placaId = botao.parentElement.parentElement.parentElement.dataset.id
 
-    window.location.assign(`../product.html?cod=${placaId}`)
+    window.location.assign(`product.html?cod=${placaId}`)
 }
 
 const onClickVisualizar = () => {
     const visualBotoes = document.getElementsByClassName("quick-view")
-    for (botao of visualBotoes) {
+    for (const botao of visualBotoes) {
         botao.addEventListener('click', visualizarProduto)
     }
 }
@@ -212,8 +213,8 @@ const loadPlacas = async () => {
 
     const marcas = getLocalStorageItem('marcas').marcas
 
-    for (placa of dados.placas) {
-        for (marca of marcas) {
+    for (const placa of dados.placas) {
+        for (const marca of marcas) {
             if (marca.id == placa.fabricante)
                 placa.fabricante = marca.nome
         }
@@ -357,10 +358,10 @@ const mostrarPaginacao = (targetElement, sourceItens) => {
 const filtrarPlacas = (placas, marcas, termos = [], categoria) => {
     let filtradas = new Array()
     
-    for (placa of placas) {
+    for (const placa of placas) {
     if (placa.estoque > 0) {
         if (categoria == 0 || categoria == placa.categoria) {
-            for (termo of termos) {
+            for (const termo of termos) {
                 if (placa.modelo.toUpperCase().includes(termo)) {
                     filtradas.unshift(placa)
                     break
@@ -383,7 +384,7 @@ const construirResultados = () => {
     const termos = getParam("q")?.toUpperCase().split(" ")
     const categoria = getParam("cat")
     
-    const placas = getLocalStorageItem('placas').placas
+    const placas = getLocalStorageItem('placas')
     const marcas = getLocalStorageItem('marcas').marcas
 
     let resultados = filtrarPlacas(placas, marcas, termos, categoria)
@@ -459,7 +460,7 @@ const limparCarrinho = (e) => {
     let allCart = getLocalStorageItem('carrinho')
     let userCart = allCart.filter(p => p.user == getCurrentUser())
 
-    for (product of userCart) {
+    for (const product of userCart) {
         localStorageSpliceItem('carrinho', product)
     }
     console.log(getLocalStorageItem('carrinho'))
@@ -483,7 +484,7 @@ const montarTabela = (tabela, total) => {
                 </div>`
     })
 
-    for (item of itens) {
+    for (const item of itens) {
         tabela.innerHTML += item
     }
 
@@ -530,7 +531,7 @@ const arrayToDivImage = itens => {
 
 const elementsToString = itens => {
     let str = ''
-    for (item of itens) {
+    for (const item of itens) {
         str += item
     }
     return str
@@ -578,14 +579,14 @@ const showProductInfo = (placa, container) => {
     container.detalhes.cartBtn.innerHTML += ` ${onCart ? `Remover do carrinho` : `Adicionar ao carrinho`}`
 }
 
-const carregarProduto = () => {
+const carregarProduto = async () => {
     const codigo = getParam('cod')
     if (!codigo) {
         window.location.assign('index.html')
     }
     const placa = getPlacaById(codigo)
     if (!placa) {
-        window.location.assign('index.html')   
+        //gwindow.location.assign('index.html') 
     }
 
     const container = {
@@ -615,18 +616,18 @@ const carregarProduto = () => {
 const carregarFiltrosCategorias = (categorias) => {
     const checked = getLocalStorageItem('filtrosCats') || new Array()
 
-    for (categoria of categorias) {
+    for (const categoria of categorias) {
         if (checked.indexOf(categoria.dataset.cat) != -1) {
             categoria.checked = true
         }
     }
 
-    const allBoards = getLocalStorageItem('placas').placas
+    const allBoards = getLocalStorageItem('placas')
     const categories = categorias.map(function(input) {
         return parseInt(input.dataset.cat)
     })
 
-    for (category of categories) {
+    for (const category of categories) {
         let boardsOfCategory = allBoards.reduce(function(sum, board) {
             return board.categoria == category ? sum += 1 : sum
         }, 0)
@@ -636,11 +637,11 @@ const carregarFiltrosCategorias = (categorias) => {
 
 const carregarFiltroMarcas = () => {
     const marcas = getLocalStorageItem('marcas').marcas
-    const placas = getLocalStorageItem('placas').placas
+    const placas = getLocalStorageItem('placas')
     const container = document.getElementById('brand-filter')
     let checked = getLocalStorageItem('filtrosMarcas') || new Array()
 
-    for (marca of marcas) {
+    for (const marca of marcas) {
         let boardsOfBrand = placas.reduce(function(sum, board, i) {
             return board.fabricante == marca.nome ? sum += 1 : sum
         }, 0)
@@ -661,7 +662,7 @@ const carregarFiltroMarcas = () => {
 }
 
 const checkboxValueChange = (e, filtros) => {
-    const allBoards = getLocalStorageItem('placas').placas
+    const allBoards = getLocalStorageItem('placas')
     let checkedBrands = filtros.checkboxes.inputs.filter(
         checkbox => checkbox.checked == true && checkbox.dataset.marca != undefined
     )
@@ -686,7 +687,7 @@ const checkboxValueChange = (e, filtros) => {
 
     if (checkedBrands.length != 0) {
         filteredBoards = allBoards.filter(function(board) {
-            for (checkedBrand of checkedBrands) {
+            for (const checkedBrand of checkedBrands) {
                 if (board.fabricante == checkedBrand.dataset.marca)
                     return true
             }
@@ -698,7 +699,7 @@ const checkboxValueChange = (e, filtros) => {
 
     if (checkedCategories.length != 0) {
         filteredBoards = filteredBoards.filter(function(board) {
-            for (checkedCategory of checkedCategories) {
+            for (const checkedCategory of checkedCategories) {
                 if (board.categoria == checkedCategory.dataset.cat)
                     return true
             }
@@ -726,7 +727,7 @@ const preencherFiltros = () => {
     // em relacao as checkboxes das marcas
     const checkboxes = document.getElementsByClassName("input-checkbox")
 
-    for (checkbox of checkboxes) {
+    for (const checkbox of checkboxes) {
         let input = checkbox.children[0]
 
         input.addEventListener('change', function(e) {
@@ -769,7 +770,7 @@ const mostrarResultadosCategorias = (itens, container) => {
 const carregarCategorias = () => {
     carregarFiltros()
 
-    let placasFiltradas = getLocalStorageItem('placas').placas
+    let placasFiltradas = getLocalStorageItem('placas')
     const resultElem = document.getElementById('resultados')
     
     mostrarResultadosCategorias(placasFiltradas, resultElem)
@@ -844,7 +845,7 @@ return null
 const hasCookie = (name = '') => {
 let cookies = getAllCookies()
 
-for (cookie of cookies) {
+for (const cookie of cookies) {
     if (cookie.name.toUpperCase() == name.toUpperCase()) {
         return true
     }
@@ -997,7 +998,7 @@ const carregarFavoritos = () => {
     const favs = getLocalStorageItem('favoritos')
     const favsByUser = favs.filter(f => f.user == getCurrentUser())
     let placasFavoritas = new Array()
-    for (fav of favsByUser) {
+    for (const fav of favsByUser) {
         placasFavoritas.push(getPlacaById(fav.id))
     }
     const container = document.getElementById('placas-favoritas')
