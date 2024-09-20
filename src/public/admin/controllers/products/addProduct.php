@@ -20,9 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_FILES['tImagens'])) {
             $filenames = array();
             foreach ($_FILES['tImagens']['name'] as $file) {
-                $filenames[] = "\"$file\"";
+                $filenames[] = $file;
             }
-            $newUser['imagens'] = "[" . implode(', ', $filenames) . "]";
+            $newUser['imagens'] = json_encode($filenames, JSON_UNESCAPED_UNICODE);
     }
 
     require_once '../productController.php';

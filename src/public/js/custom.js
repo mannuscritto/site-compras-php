@@ -207,21 +207,22 @@ const localStorageSpliceItem = (name, elem) => {
     setLocalStorageItem(name, item)
 }
 
-const loadPlacas = async () => {
-    let req = await fetch('./json/produtos.json')
-    let dados = await req.json()
-
+const loadProducts = async () => {
+    getProducts()
+    const produtos = getLocalStorageItem('placas')
     const marcas = getLocalStorageItem('marcas').marcas
 
-    for (const placa of dados.placas) {
+    for (const produto of produtos) {
         for (const marca of marcas) {
-            if (marca.id == placa.fabricante)
-                placa.fabricante = marca.nome
+            if (marca.id == produto.fabricante)
+                produto.fabricante = marca.nome
         }
-        placa.preco_base = parseFloat(placa.preco_base.replace('.', '').replace(',', '.'))
+        produto.preco_base = parseFloat(produto.preco_base.replace('.', '').replace(',', '.'))
+        produto.imagens = JSON.parse(produto.imagens)
+        produto.notas = JSON.parse(produto.notas)
     }
 
-    setLocalStorageItem('placas', dados)
+    setLocalStorageItem('placas', produtos)
 }
 
 const checarDados = async () => {
@@ -231,7 +232,7 @@ const checarDados = async () => {
         setLocalStorageItem('marcas', dados)
     }
 
-    getProducts()
+    loadProducts()
 }
 
 const calcularNotaProduto = (notas) => {
@@ -463,7 +464,6 @@ const limparCarrinho = (e) => {
     for (const product of userCart) {
         localStorageSpliceItem('carrinho', product)
     }
-    console.log(getLocalStorageItem('carrinho'))
 }
 
 const montarTabela = (tabela, total) => {
@@ -522,6 +522,7 @@ const carregarInicio = () => {
 
 const arrayToDivImage = itens => {
     //itens = itens.slice(0, 4)
+    
     return itens.map(function(item) {
         return `<div class="product-preview">
                     <img src="./img/${item}" alt="${item}">
@@ -573,7 +574,7 @@ const showProductInfo = (placa, container) => {
     container.detalhes.qtd.min = 1
     container.detalhes.qtd.max = placa.estoque
 
-    onCart = isOnCart(placa.id)
+    const onCart = isOnCart(placa.id)
     container.detalhes.cartBtn.dataset.cart = onCart
     container.detalhes.cartBtn.innerHTML = `<i class="fa fa-shopping-cart">`
     container.detalhes.cartBtn.innerHTML += ` ${onCart ? `Remover do carrinho` : `Adicionar ao carrinho`}`
@@ -586,7 +587,7 @@ const carregarProduto = async () => {
     }
     const placa = getPlacaById(codigo)
     if (!placa) {
-        //gwindow.location.assign('index.html') 
+        //window.location.assign('index.html') 
     }
 
     const container = {
