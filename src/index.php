@@ -1,6 +1,7 @@
 <?php
 require_once "config/db.php";
 require_once "config/userAuth.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -52,17 +53,7 @@ require_once "config/userAuth.php";
 						<li><a href="https://www.google.com.br/maps/place/Catanduva,+SP/@-21.148862,-49.046002,12z/data=!3m1!4b1!4m5!3m4!1s0x94bc1e6b7f228597:0x2af440e5dd0adb6e!8m2!3d-21.1312077!4d-48.9777194"><i class="fa fa-map-marker"></i> Rua do Comércio, 1080</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<?php
-
-						if (!isLoggedIn()) {
-							echo "<li id=\"link_conta\"><a href=\"formLogin.php\" id=\"user_link\"><i class=\"fa fa-user-o\"></i> <span id=\"user_name\"></span></a></li>";
-						} else {
-							echo "<li><a href=\"controllers/formLogoutController.php\"><span id=\"exit_user\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>Sair</span></a></li>";
-						}
-
-						?>
-						
-						
+						<?php require_once "components/auth-buttons.php" ?>
 					</ul>
 				</div>
 			</div>
@@ -77,7 +68,7 @@ require_once "config/userAuth.php";
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<img src="./img/logo.png" alt="LOGO GRAFIK">
 								</a>
 							</div>
@@ -116,7 +107,7 @@ require_once "config/userAuth.php";
 
 								<!-- Cart -->
 								<div>
-									<a href="checkout.html">
+									<a href="checkout.php">
 										<i class="fa fa-shopping-cart"></i>
 										<span>Carrinho</span>
 										<div id="nro_cart" class="qty"></div>
@@ -152,8 +143,8 @@ require_once "config/userAuth.php";
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="store.html">Categorias</a></li>
+						<li class="active"><a href="index.php">Home</a></li>
+						<li><a href="store.php">Categorias</a></li>
 					</ul>
 					<!-- /NAV -->
 
@@ -318,9 +309,9 @@ require_once "config/userAuth.php";
 							<div class="footer">
 								<h3 class="footer-title">Categorias</h3>
 								<ul class="footer-links">
-									<li><a href="store.html">Low End</a></li>
-									<li><a href="store.html">Mid End</a></li>
-									<li><a href="store.html">High End</a></li>
+									<li><a href="store.php">Low End</a></li>
+									<li><a href="store.php">Mid End</a></li>
+									<li><a href="store.php">High End</a></li>
 								</ul>
 							</div>
 						</div>
@@ -331,11 +322,11 @@ require_once "config/userAuth.php";
 							<div class="footer">
 								<h3 class="footer-title">Informação</h3>
 								<ul class="footer-links">
-									<li><a href="index.html">Sobre nós</a></li>
-									<li><a href="checkout.html">Contato</a></li>
-									<li><a href="index.html">Política de Privacidade</a></li>
-									<li><a href="checkout.html">Pedidos e Devoluções</a></li>
-									<li><a href="index.html">Termos e Condições</a></li>
+									<li><a href="index.php">Sobre nós</a></li>
+									<li><a href="checkout.php">Contato</a></li>
+									<li><a href="index.php">Política de Privacidade</a></li>
+									<li><a href="checkout.php">Pedidos e Devoluções</a></li>
+									<li><a href="index.php">Termos e Condições</a></li>
 								</ul>
 							</div>
 						</div>
@@ -344,11 +335,11 @@ require_once "config/userAuth.php";
 							<div class="footer">
 								<h3 class="footer-title">Serviço</h3>
 								<ul class="footer-links">
-									<li><a href="store.html">Conta</a></li>
-									<li><a href="checkout.html">Carrinho</a></li>
-									<li><a href="checkout.html">Favoritos</a></li>
+									<li><a href="store.php">Conta</a></li>
+									<li><a href="checkout.php">Carrinho</a></li>
+									<li><a href="checkout.php">Favoritos</a></li>
 									<li><a href="product.html">Rastrear pedido</a></li>
-									<li><a href="index.html">Ajuda</a></li>
+									<li><a href="index.php">Ajuda</a></li>
 								</ul>
 							</div>
 						</div>

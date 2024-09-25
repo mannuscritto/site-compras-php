@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Catálogo - Vendas de Placas de Vídeo</title>
+		<title>Resultados da busca por </title>
 
  		<!-- Google font -->
  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -27,15 +27,15 @@
  		<!-- Custom stlylesheet -->
  		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+ 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ 		<!--[if lt IE 9]>
+ 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+ 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ 		<![endif]-->
 
     </head>
-	<body>
+	<body onload="carregarBusca()">
 		<!-- HEADER -->
 		<header>
 			<!-- TOP HEADER -->
@@ -63,7 +63,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<img src="./img/logo.png" alt="LOGO GRAFIK">
 								</a>
 							</div>
@@ -74,13 +74,13 @@
 						<div class="col-md-6">
 							<div class="header-search">
 								<form action="search.html">
-									<select class="input-select" name="cat">
+									<select class="input-select" name="cat" id="select-cat">
 										<option value="0">Tudo</option>
 										<option value="1">Low End</option>
 										<option value="2">Mid End</option>
 										<option value="3">High End</option>
 									</select>
-									<input class="input" placeholder="Pesquise por modelos, fabricantes..." name="q">
+									<input class="input" placeholder="Pesquise por modelos, fabricantes..." name="q" id="termos">
 									<button type="submit" class="search-btn">Pesquisar</button>
 								</form>
 							</div>
@@ -102,7 +102,7 @@
 
 								<!-- Cart -->
 								<div>
-									<a href="checkout.html">
+									<a href="checkout.php">
 										<i class="fa fa-shopping-cart"></i>
 										<span>Carrinho</span>
 										<div id="nro_cart" class="qty"></div>
@@ -136,8 +136,8 @@
 				<div class="row">
 					<nav aria-label="breadcrumb" class="col-md-12">
 			  			<ol class="breadcrumb">
-			    			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			    			<li class="breadcrumb-item active"><a href="store.html">Categorias</a></li>
+			    			<li class="breadcrumb-item"><a href="index.php">Home</a></li>
+			    			<li class="breadcrumb-item active" id="bread_model">Pesquisa</li>
 			  			</ol>
 					</nav>
 				</div>
@@ -150,68 +150,7 @@
 			<!-- container -->
 			<div class="container">
 				<!-- row -->
-				<div class="row">
-					<!-- ASIDE -->
-					<div id="aside" class="col-md-3">
-						<!-- aside Widget -->
-						<div class="aside">
-							<h3 class="aside-title">Categorias</h3>
-							<div class="checkbox-filter">
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-1" data-cat="1">
-									<label for="category-1">
-										<span></span>
-										Low End
-										<small></small>
-									</label>
-								</div>
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-2" data-cat="2">
-									<label for="category-2">
-										<span></span>
-										Mid End
-										<small></small>
-									</label>
-								</div>
-
-								<div class="input-checkbox category">
-									<input type="checkbox" id="category-3" data-cat="3">
-									<label for="category-3">
-										<span></span>
-										High End
-										<small></small>
-									</label>
-								</div>
-							</div>
-						</div>
-						<!-- /aside Widget -->
-
-						<!-- aside Widget -->
-						<div class="aside">
-							<h3 class="aside-title">Marca</h3>
-							<div class="checkbox-filter" id="brand-filter">
-							</div>
-						</div>
-						<!-- /aside Widget -->
-					</div>
-					<!-- /ASIDE -->
-
-					<!-- STORE -->
-					<div id="store" class="col-md-9">
-						<!-- store products -->
-						<div class="row" id="resultados">
-
-						</div>
-
-						<!-- store bottom filter -->
-						<div class="store-filter clearfix" id="paginacao">
-							
-						</div>
-						<!-- /store bottom filter -->
-					</div>
-					<!-- /STORE -->
+				<div class="row" id="resultados">
 				</div>
 				<!-- /row -->
 			</div>
@@ -243,9 +182,9 @@
 							<div class="footer">
 								<h3 class="footer-title">Categorias</h3>
 								<ul class="footer-links">
-									<li><a href="store.html">Low End</a></li>
-									<li><a href="store.html">Mid End</a></li>
-									<li><a href="store.html">High End</a></li>
+									<li><a href="store.php">Low End</a></li>
+									<li><a href="store.php">Mid End</a></li>
+									<li><a href="store.php">High End</a></li>
 								</ul>
 							</div>
 						</div>
@@ -256,11 +195,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Informação</h3>
 								<ul class="footer-links">
-									<li><a href="index.html">Sobre nós</a></li>
-									<li><a href="checkout.html">Contato</a></li>
-									<li><a href="index.html">Política de Privacidade</a></li>
-									<li><a href="checkout.html">Pedidos e Devoluções</a></li>
-									<li><a href="index.html">Termos e Condições</a></li>
+									<li><a href="index.php">Sobre nós</a></li>
+									<li><a href="checkout.php">Contato</a></li>
+									<li><a href="index.php">Política de Privacidade</a></li>
+									<li><a href="checkout.php">Pedidos e Devoluções</a></li>
+									<li><a href="index.php">Termos e Condições</a></li>
 								</ul>
 							</div>
 						</div>
@@ -269,11 +208,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Serviço</h3>
 								<ul class="footer-links">
-									<li><a href="store.html">Conta</a></li>
-									<li><a href="checkout.html">Carrinho</a></li>
-									<li><a href="checkout.html">Favoritos</a></li>
-									<li><a href="product.html">Rastrear pedido</a></li>
-									<li><a href="index.html">Ajuda</a></li>
+									<li><a href="store.php">Conta</a></li>
+									<li><a href="checkout.php">Carrinho</a></li>
+									<li><a href="checkout.php">Favoritos</a></li>
+									<li><a href="product.php">Rastrear pedido</a></li>
+									<li><a href="index.php">Ajuda</a></li>
 								</ul>
 							</div>
 						</div>
@@ -315,6 +254,7 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="./js/custom.js" type="module"></script>
+		<script src="js/custom.js"></script>
+
 	</body>
 </html>

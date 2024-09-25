@@ -13,6 +13,7 @@ function login($email, $password) {
 
     if ($user && password_verify($password, $user['senha'])) {
         $_SESSION['user_id'] = $user['id'];
+        $_SESSION['user_name'] = $user['nome_completo'];
         return true;
     } else {
         return false;

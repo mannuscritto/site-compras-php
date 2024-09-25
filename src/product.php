@@ -47,7 +47,7 @@
 						<li><a href="https://www.google.com.br/maps/place/Catanduva,+SP/@-21.148862,-49.046002,12z/data=!3m1!4b1!4m5!3m4!1s0x94bc1e6b7f228597:0x2af440e5dd0adb6e!8m2!3d-21.1312077!4d-48.9777194"><i class="fa fa-map-marker"></i> Rua do Comércio, 1080</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li id="link_conta"><a href="formLogin.html" id="user_link"><i class="fa fa-user-o"></i> <span id="user_name"></span></a></li>
+						<li id="link_conta"><a href="formLogin.php" id="user_link"><i class="fa fa-user-o"></i> <span id="user_name"></span></a></li>
 						<li onclick="logoff()"><a href=""><span id="exit_user"><i class="fa fa-sign-out" aria-hidden="true"></i>Sair</span></a></li>
 					</ul>
 				</div>
@@ -63,7 +63,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<img src="./img/logo.png" alt="LOGO GRAFIK">
 								</a>
 							</div>
@@ -73,7 +73,7 @@
 						<!-- SEARCH BAR -->
 						<div class="col-md-6">
 							<div class="header-search">
-								<form action="search.html">
+								<form action="search.php">
 									<select class="input-select" name="cat">
 										<option value="0">Tudo</option>
 										<option value="1">Low End</option>
@@ -92,7 +92,7 @@
 							<div class="header-ctn">
 								<!-- Wishlist -->
 								<div>
-									<a href="favoritos.html">
+									<a href="favoritos.php">
 										<i class="fa fa-heart-o"></i>
 										<span>Favoritos</span>
 										<div id="nro_fav" class="qty"></div>
@@ -102,7 +102,7 @@
 
 								<!-- Cart -->
 								<div>
-									<a href="checkout.html">
+									<a href="checkout.php">
 										<i class="fa fa-shopping-cart"></i>
 										<span>Carrinho</span>
 										<div id="nro_cart" class="qty"></div>
@@ -138,8 +138,8 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="store.html">Categorias</a></li>
+						<li class="active"><a href="index.php">Home</a></li>
+						<li><a href="store.php">Categorias</a></li>
 					</ul>
 					<!-- /NAV -->
 
@@ -158,9 +158,9 @@
 				<div class="row">
 					<nav aria-label="breadcrumb" class="col-md-12">
 			  			<ol class="breadcrumb">
-			    			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			    			<li class="breadcrumb-item"><a href="store.html">Categorias</a></li>
-			    			<li class="breadcrumb-item"><a href="store.html" id="bread_categ_link"></a></li>
+			    			<li class="breadcrumb-item"><a href="index.php">Home</a></li>
+			    			<li class="breadcrumb-item"><a href="store.php">Categorias</a></li>
+			    			<li class="breadcrumb-item"><a href="store.php" id="bread_categ_link"></a></li>
 			    			<li class="breadcrumb-item active" id="bread_model"></li>
 			  			</ol>
 					</nav>
@@ -494,7 +494,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Low end</p>
-								<h3 class="product-name"><a href="product.html">Gigabyte GeForce GTX 1650</a></h3>
+								<h3 class="product-name"><a href="product.php">Gigabyte GeForce GTX 1650</a></h3>
 								<h4 class="product-price">R$685.00 <del class="product-old-price">$890.00</del></h4>
 								<div class="product-rating">
 								</div>
@@ -522,7 +522,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">High End</p>
-								<h3 class="product-name"><a href="product.html">XFX AMD RX 5700 XT</a></h3>
+								<h3 class="product-name"><a href="product.php">XFX AMD RX 5700 XT</a></h3>
 								<h4 class="product-price">$3980.00 <del class="product-old-price">$3990.00</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -555,7 +555,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Med End</p>
-								<h3 class="product-name"><a href="product.html">Asrock AMD RX 580</a></h3>
+								<h3 class="product-name"><a href="product.php">Asrock AMD RX 580</a></h3>
 								<h4 class="product-price">R$980.00 <del class="product-old-price">$1090.00</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -585,7 +585,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">High END</p>
-								<h3 class="product-name"><a href="product.html">Gigabyte NVIDIA RTX 2080TI/a></h3>
+								<h3 class="product-name"><a href="product.php">Gigabyte NVIDIA RTX 2080TI/a></h3>
 								<h4 class="product-price">$4990.00 <del class="product-old-price">$5090.00</del></h4>
 								<div class="product-rating">
 								</div>
@@ -633,9 +633,9 @@
 							<div class="footer">
 								<h3 class="footer-title">Categorias</h3>
 								<ul class="footer-links">
-									<li><a href="store.html">Low End</a></li>
-									<li><a href="store.html">Mid End</a></li>
-									<li><a href="store.html">High End</a></li>
+									<li><a href="store.php">Low End</a></li>
+									<li><a href="store.php">Mid End</a></li>
+									<li><a href="store.php">High End</a></li>
 								</ul>
 							</div>
 						</div>
@@ -646,11 +646,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Informação</h3>
 								<ul class="footer-links">
-									<li><a href="index.html">Sobre nós</a></li>
-									<li><a href="checkout.html">Contato</a></li>
-									<li><a href="index.html">Política de Privacidade</a></li>
-									<li><a href="checkout.html">Pedidos e Devoluções</a></li>
-									<li><a href="index.html">Termos e Condições</a></li>
+									<li><a href="index.php">Sobre nós</a></li>
+									<li><a href="checkout.php">Contato</a></li>
+									<li><a href="index.php">Política de Privacidade</a></li>
+									<li><a href="checkout.php">Pedidos e Devoluções</a></li>
+									<li><a href="index.php">Termos e Condições</a></li>
 								</ul>
 							</div>
 						</div>
@@ -659,11 +659,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Serviço</h3>
 								<ul class="footer-links">
-									<li><a href="store.html">Conta</a></li>
-									<li><a href="checkout.html">Carrinho</a></li>
-									<li><a href="checkout.html">Favoritos</a></li>
-									<li><a href="product.html">Rastrear pedido</a></li>
-									<li><a href="index.html">Ajuda</a></li>
+									<li><a href="store.php">Conta</a></li>
+									<li><a href="checkout.php">Carrinho</a></li>
+									<li><a href="checkout.php">Favoritos</a></li>
+									<li><a href="product.php">Rastrear pedido</a></li>
+									<li><a href="index.php">Ajuda</a></li>
 								</ul>
 							</div>
 						</div>

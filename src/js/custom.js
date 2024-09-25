@@ -4,7 +4,7 @@ import {getLocalStorageItem, setLocalStorageItem} from './helpers.js'
 window.onload = async () => {
     checarDados()
     
-    if (!window.location.pathname.includes('.html') || window.location.pathname.includes('index')) {
+    if (!window.location.pathname.includes('.php') || window.location.pathname.includes('index')) {
         carregarInicio()
     } else if (window.location.pathname.includes('product')) {
         await carregarProduto()
@@ -20,7 +20,7 @@ window.onload = async () => {
         carregarCategorias()
     } else if (window.location.pathname.includes('formLogin')) {
         if (getCookie('UsuarioL') != null) {
-            window.location.assign('index.html')
+            window.location.assign('index.php')
         }
     } else if (window.location.pathname.includes('favoritos')) {
         carregarFavoritos()
@@ -144,7 +144,6 @@ const colocarCarrinho = (e) => {
     let botao = e.currentTarget
     let icone = `<i class="fa fa-shopping-cart"></i>`
     const placa = {
-        user: getCurrentUser(),
         id: getParam('cod'),
         quant: document.getElementById('input_qtd').value
     }
@@ -172,7 +171,7 @@ const visualizarProduto = (e) => {
     let botao = e.currentTarget
     let placaId = botao.parentElement.parentElement.parentElement.dataset.id
 
-    window.location.assign(`product.html?cod=${placaId}`)
+    window.location.assign(`product.php?cod=${placaId}`)
 }
 
 const onClickVisualizar = () => {
@@ -303,7 +302,7 @@ const mostrarProdutos = (produtos, container, titulo, cols = 4) => {
                 </div>
                 <div class="product-body">
                     <p class="product-category">${categorias[produto.categoria - 1]}</p>
-                    <h3 class="product-name"><a href="product.html?cod=${produto.id}">${produto.fabricante} ${produto.modelo}</a></h3>
+                    <h3 class="product-name"><a href="product.php?cod=${produto.id}">${produto.fabricante} ${produto.modelo}</a></h3>
                     <h4 class="product-price">R$
                         ${(produto.preco_base * (1 - (produto.desconto / 100))).toFixed(2).toString().replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
                         ${produto.desconto > 0 ? `<del class="product-old-price">${produto.preco_base.toFixed(2).toString().replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</del>`: ''}
@@ -422,9 +421,8 @@ const carregarBusca = () => {
 const getLocalStorageItemLength = item => {
     let itemArray = getLocalStorageItem(item)
     if (itemArray == null) {//se nao estiver
-        return 0//retorna 0
+        return 0 //retorna 0
     } else {
-        itemArray = itemArray.filter(a => a.user == getCurrentUser())
         return itemArray.length//se estiver salvo, retorna seu comprimento
     }
 }
@@ -438,23 +436,6 @@ const onLoadBadges = () => {
 
     badgeFav.innerText = nroFavs
     badgeCart.innerText = nroCart
-
-    const userName = document.getElementById('user_name')
-    const userLink = document.getElementById('user_link')
-    const botaoSair = document.getElementById('exit_user');
-
-    const currentUser = getCurrentUser()
-    console.log(currentUser)
-
-    if (currentUser != '') {
-        userName.innerText = currentUser
-        userLink.href = 'index.html'
-
-    } else {
-        userName.innerText = 'Login'
-        userLink.href = 'formLogin.php'
-        botaoSair.innerHTML = '';
-    }
 }
 
 const limparCarrinho = (e) => {
@@ -468,13 +449,10 @@ const limparCarrinho = (e) => {
 
 const montarTabela = (tabela, total) => {
     let produtos = getLocalStorageItem('carrinho') || new Array()
-    //const user = getCurrentUser()
-
-    //produtos = produtos.filter(p => p.user == user)
 
     let precoTotal = 0
     
-    let itens = produtos.map(function(cartItem) {
+    let itens = produtos.map((cartItem, i) => {
         const produto = getPlacaById(cartItem.id)
         if (produto === null)
             return
@@ -482,6 +460,9 @@ const montarTabela = (tabela, total) => {
         precoTotal += preco
         return `<div class="order-col">
                     <div>${cartItem.quant}x ${produto.modelo} ${produto.fabricante}</div>
+                    <input type="hidden" name="produtos[${i}][quant]" value="${cartItem.quant}" />
+                    <input type="hidden" name="produtos[${i}][id]" value="${produto.id}" />
+                    <input type="hidden" name="produtos[${i}][preco]" value="${preco.toFixed(2)}" />
                     <div>R$${preco.toFixed(2).toString().replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</div>
                 </div>`
     })
@@ -490,14 +471,16 @@ const montarTabela = (tabela, total) => {
         tabela.innerHTML += item
     }
 
-    total.innerText = `R$${precoTotal.toFixed(2).toString().replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")}`
+    total.innerHTML = `R$${precoTotal.toFixed(2).toString().replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
+        <input type="hidden" name="precoTotal" value="${precoTotal.toFixed(2)}" />
+    `
 }
 
 const carregarCarrinho = () => {
     const tabelaPedidos = document.getElementById('pedidos')
     const pedidosTotal = document.getElementById('total')
 
-    montarTabela(tabelaPedidos, total)
+    montarTabela(tabelaPedidos, pedidosTotal)
 }
 
 const mostrarRecomendadas = (container) => {
@@ -554,7 +537,7 @@ const showProductInfo = (placa, container) => {
     const categorias = new Array('Low End', 'Mid End', 'High End')
 
     container.breadcrumb.categoria.innerText = categorias[placa.categoria-1]
-    container.breadcrumb.categoria.href = `store.html?cat=${placa.categoria}`
+    container.breadcrumb.categoria.href = `store.php?cat=${placa.categoria}`
 
     container.breadcrumb.modelo.innerText = placa.modelo
 
@@ -585,11 +568,11 @@ const showProductInfo = (placa, container) => {
 const carregarProduto = async () => {
     const codigo = getParam('cod')
     if (!codigo) {
-        window.location.assign('index.html')
+        window.location.assign('index.php')
     }
     const placa = getPlacaById(codigo)
     if (!placa) {
-        //window.location.assign('index.html') 
+        //window.location.assign('index.php') 
     }
 
     const container = {
@@ -893,7 +876,7 @@ if(!usuarios){
                 //document.cookie = "loginUsuario="+u.email+"; expires="+dia+", "+dataFinal+" UTC; path=/;";
                 setCookie("UsuarioL",fo.emailLogin.value,'/');
 
-                window.location.assign('index.html');
+                window.location.assign('index.php');
                 
             }   
             

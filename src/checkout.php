@@ -1,3 +1,9 @@
+<?php
+require_once "config/db.php";
+require_once "config/userAuth.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -47,8 +53,7 @@
 						<li><a href="https://www.google.com.br/maps/place/Catanduva,+SP/@-21.148862,-49.046002,12z/data=!3m1!4b1!4m5!3m4!1s0x94bc1e6b7f228597:0x2af440e5dd0adb6e!8m2!3d-21.1312077!4d-48.9777194"><i class="fa fa-map-marker"></i> Rua do Comércio, 1080</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li id="link_conta"><a href="formLogin.html" id="user_link"><i class="fa fa-user-o"></i> <span id="user_name"></span></a></li>
-						<li onclick="logoff()"><a href=""><span id="exit_user"><i class="fa fa-sign-out" aria-hidden="true"></i>Sair</span></a></li>
+					<?php require_once "components/auth-buttons.php" ?>
 					</ul>
 				</div>
 			</div>
@@ -63,7 +68,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<img src="./img/logo.png" alt="LOGO GRAFIK">
 								</a>
 							</div>
@@ -102,7 +107,7 @@
 
 								<!-- Cart -->
 								<div>
-									<a href="checkout.html">
+									<a href="checkout.php">
 										<i class="fa fa-shopping-cart"></i>
 										<span>Carrinho</span>
 										<div id="nro_cart" class="qty"></div>
@@ -136,8 +141,8 @@
 				<div class="row">
 					<nav aria-label="breadcrumb" class="col-md-12">
 			  			<ol class="breadcrumb">
-			    			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			    			<li class="breadcrumb-item active"><a href="checkout.html">Retirada</a></li>
+			    			<li class="breadcrumb-item"><a href="index.php">Home</a></li>
+			    			<li class="breadcrumb-item active"><a href="checkout.php">Retirada</a></li>
 			  			</ol>
 					</nav>
 				</div>
@@ -151,165 +156,96 @@
 			<div class="container">
 				<!-- row -->
 				<div class="row">
+					<form method="POST" action="controllers/formCheckoutController.php">
+						<div class="col-md-7">
+							<!-- Billing Details -->
+							<div class="billing-details">
+								<div class="section-title">
+									<h3 class="title">Endereço de entrega</h3>
+								</div>
+								<div class="form-group">
+									<input class="input" type="text" name="name" placeholder="Nome completo">
+								</div>
+								<div class="form-group">
+									<input class="input" type="text" name="address" placeholder="Endereço">
+								</div>
+								<div class="form-group">
+									<input class="input" type="text" name="complement" placeholder="Complemento">
+								</div>
+								<div class="form-group">
+									<input class="input" type="text" name="bairro" placeholder="Bairro">
+								</div>
+								<div class="form-group">
+									<input class="input" type="text" name="city" placeholder="Cidade">
+								</div>
+								<div class="form-group">
+									<input class="input" type="text" name="state" placeholder="Estado">
+								</div>
+								<div class="form-group">
+									<input class="input" type="text" name="zip-code" placeholder="Cep">
+								</div>
+							</div>
+							<!-- /Billing Details -->
+						</div>
 
-					<div class="col-md-7">
-						<!-- Billing Details -->
-						<div class="billing-details">
-							<div class="section-title">
-								<h3 class="title">Endereço de entrega</h3>
+						<!-- Order Details -->
+						<div class="col-md-5 order-details">
+							<div class="section-title text-center">
+								<h3 class="title">Seu pedido</h3>
 							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="first-name" placeholder="Nome">
+							<div class="order-summary">
+								<div class="order-col">
+									<div><strong>PRODUTO</strong></div>
+									<div><strong>PREÇO</strong></div>
+								</div>
+								<div id="pedidos" class="order-products">
+									
+								</div>
+								<div class="order-col">
+									<div>Frete</div>
+									<div><strong>GRÁTIS</strong></div>
+								</div>
+								<div class="order-col">
+									<div><strong>TOTAL</strong></div>
+									<div><strong id="total" class="order-total"></strong></div>
+								</div>
 							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="last-name" placeholder="Sobrenome">
-							</div>
-							<div class="form-group">
-								<input class="input" type="email" name="email" placeholder="Email">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="address" placeholder="Endereço">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="city" placeholder="Cidade">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="country" placeholder="Estado">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="zip-code" placeholder="Cep">
-							</div>
-							<div class="form-group">
-								<input class="input" type="tel" name="tel" placeholder="Telefone">
-							</div>
-							<div class="form-group">
-								<div class="input-checkbox">
-									<input type="checkbox" id="create-account">
-									<label for="create-account">
+							<div class="payment-method">
+								<div class="input-radio">
+									<input type="radio" name="payment" id="payment-1">
+									<label for="payment-1">
 										<span></span>
-										Criar nova conta?
+										Boleto
 									</label>
 									<div class="caption">
-										<p>Isto criará uma nova conta, por favor escolha uma senha:</p>
-										<input class="input" type="password" name="password" placeholder="Escolha uma senha">
+										<p>Um boleto bancário será emitido para ser pago em qualquer banco à sua escolha, porém conta com uma taxa de gestão.</p>
+									</div>
+								</div>
+								<div class="input-radio">
+									<input type="radio" name="payment" id="payment-2">
+									<label for="payment-2">
+										<span></span>
+										Rim
+									</label>
+									<div class="caption">
+										<p>Você vai sentir uma leve picada no pescoço e, quando se der conta, acordará sedado em uma banheira de gelo.</p>
+									</div>
+								</div>
+								<div class="input-radio">
+									<input type="radio" name="payment" id="payment-3">
+									<label for="payment-3">
+										<span></span>
+										Paypal
+									</label>
+									<div class="caption">
+										<p>Simples, rápida e eficaz forma de pagamento, a única desvantagem é ter seus dados bancários roubados.</p>
 									</div>
 								</div>
 							</div>
+							<input type="submit" class="primary-btn order-submit" value="Finalizar pedido"/>
 						</div>
-						<!-- /Billing Details -->
-
-						<!-- Shiping Details -->
-						<div class="shiping-details">
-							<div class="section-title">
-								<h3 class="title">Endereço da entrega</h3>
-							</div>
-							<div class="input-checkbox">
-								<input type="checkbox" id="shiping-address">
-								<label for="shiping-address">
-									<span></span>
-									Enviar para endereço diferente?
-								</label>
-								<div class="caption">
-									<div class="form-group">
-										<input class="input" type="text" name="first-name" placeholder="Nome">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="last-name" placeholder="Sobrenome">
-									</div>
-									<div class="form-group">
-										<input class="input" type="email" name="email" placeholder="Email">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="address" placeholder="Endereço">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="city" placeholder="Cidade">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="country" placeholder="País">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="zip-code" placeholder="CEP">
-									</div>
-									<div class="form-group">
-										<input class="input" type="tel" name="tel" placeholder="Telefone">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /Shiping Details -->
-
-						<!-- Order notes -->
-						<div class="order-notes">
-							<textarea class="input" placeholder="Nota do pedido"></textarea>
-						</div>
-						<!-- /Order notes -->
-					</div>
-
-					<!-- Order Details -->
-					<div class="col-md-5 order-details">
-						<div class="section-title text-center">
-							<h3 class="title">Seu pedido</h3>
-						</div>
-						<div class="order-summary">
-							<div class="order-col">
-								<div><strong>PRODUTO</strong></div>
-								<div><strong>PREÇO</strong></div>
-							</div>
-							<div id="pedidos" class="order-products">
-								
-							</div>
-							<div class="order-col">
-								<div>Frete</div>
-								<div><strong>GRÁTIS</strong></div>
-							</div>
-							<div class="order-col">
-								<div><strong>TOTAL</strong></div>
-								<div><strong id="total" class="order-total"></strong></div>
-							</div>
-						</div>
-						<div class="payment-method">
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-1">
-								<label for="payment-1">
-									<span></span>
-									Boleto
-								</label>
-								<div class="caption">
-									<p>Um boleto bancário será emitido para ser pago em qualquer banco à sua escolha, porém conta com uma taxa de gestão.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-2">
-								<label for="payment-2">
-									<span></span>
-									Rim
-								</label>
-								<div class="caption">
-									<p>Você vai sentir uma leve picada no pescoço e, quando se der conta, acordará sedado em uma banheira de gelo.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-3">
-								<label for="payment-3">
-									<span></span>
-									Paypal
-								</label>
-								<div class="caption">
-									<p>Simples, rápida e eficaz forma de pagamento, a única desvantagem é ter seus dados bancários roubados.</p>
-								</div>
-							</div>
-						</div>
-						<div class="input-checkbox">
-							<input type="checkbox" id="terms">
-							<label for="terms">
-								<span></span>
-								Eu li e aceitos os <a href="index.html">termos & condições</a>
-							</label>
-						</div>
-						<a href="#" class="primary-btn order-submit" onclick="limparCarrinho()">Finalizar pedido</a>
-					</div>
-					<!-- /Order Details -->
+						<!-- /Order Details -->
+					</form>
 				</div>
 				<!-- /row -->
 			</div>
@@ -354,11 +290,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Informação</h3>
 								<ul class="footer-links">
-									<li><a href="index.html">Sobre nós</a></li>
-									<li><a href="checkout.html">Contato</a></li>
-									<li><a href="index.html">Política de Privacidade</a></li>
-									<li><a href="checkout.html">Pedidos e Devoluções</a></li>
-									<li><a href="index.html">Termos e Condições</a></li>
+									<li><a href="index.php">Sobre nós</a></li>
+									<li><a href="checkout.php">Contato</a></li>
+									<li><a href="index.php">Política de Privacidade</a></li>
+									<li><a href="checkout.php">Pedidos e Devoluções</a></li>
+									<li><a href="index.php">Termos e Condições</a></li>
 								</ul>
 							</div>
 						</div>
@@ -368,10 +304,10 @@
 								<h3 class="footer-title">Serviço</h3>
 								<ul class="footer-links">
 									<li><a href="store.html">Conta</a></li>
-									<li><a href="checkout.html">Carrinho</a></li>
-									<li><a href="checkout.html">Favoritos</a></li>
+									<li><a href="checkout.php">Carrinho</a></li>
+									<li><a href="checkout.php">Favoritos</a></li>
 									<li><a href="product.html">Rastrear pedido</a></li>
-									<li><a href="index.html">Ajuda</a></li>
+									<li><a href="index.php">Ajuda</a></li>
 								</ul>
 							</div>
 						</div>

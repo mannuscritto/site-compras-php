@@ -1,6 +1,6 @@
 <?php
 require_once "../config/db.php";
-require "../config/userAuth.php";
+require_once "../config/userAuth.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['emailLogin'];
