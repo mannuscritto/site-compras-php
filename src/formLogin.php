@@ -139,7 +139,7 @@
 					<!-- /ghost -->	
 					</div>
 					<div class="col-md-8">
-						<form name="formularioLogin" action="" method="POST" onsubmit="">
+						<form name="formularioLogin" action="controllers/formLoginController.php" method="POST" onsubmit="">
 							<!-- Billing Details -->
 						<div class="billing-details" name="divInterna" id="divInterna">
 							<div class="section-title">
@@ -154,10 +154,10 @@
 							</div>
 								<div class="section-title" id="erroSlogin"></div>	
 							
-							<input type="button" onclick="verificarLogin()" class="primary-btn order-submit" name="btnEnviar" id="btnEnviar" value="Logar">
+							<input type="submit" class="primary-btn order-submit" name="btnEnviar" id="btnEnviar" value="Logar">
 							<div class="section-title" id="loginSucesso"></div>
 
-							<a href="formUser.html"  class="store-grid">Não tem cadastro ainda ? Cadastre-se</a>
+							<a href="formUser.php"  class="store-grid">Não tem cadastro ainda ? Cadastre-se</a>
 							
 							
 							

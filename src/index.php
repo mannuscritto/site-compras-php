@@ -1,3 +1,8 @@
+<?php
+require_once "config/db.php";
+require_once "config/userAuth.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -47,8 +52,17 @@
 						<li><a href="https://www.google.com.br/maps/place/Catanduva,+SP/@-21.148862,-49.046002,12z/data=!3m1!4b1!4m5!3m4!1s0x94bc1e6b7f228597:0x2af440e5dd0adb6e!8m2!3d-21.1312077!4d-48.9777194"><i class="fa fa-map-marker"></i> Rua do Comércio, 1080</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li id="link_conta"><a href="formLogin.html" id="user_link"><i class="fa fa-user-o"></i> <span id="user_name"></span></a></li>
-						<li onclick="logoff()"><a href=""><span id="exit_user"><i class="fa fa-sign-out" aria-hidden="true"></i>Sair</span></a></li>
+						<?php
+
+						if (!isLoggedIn()) {
+							echo "<li id=\"link_conta\"><a href=\"formLogin.php\" id=\"user_link\"><i class=\"fa fa-user-o\"></i> <span id=\"user_name\"></span></a></li>";
+						} else {
+							echo "<li><a href=\"controllers/formLogoutController.php\"><span id=\"exit_user\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>Sair</span></a></li>";
+						}
+
+						?>
+						
+						
 					</ul>
 				</div>
 			</div>

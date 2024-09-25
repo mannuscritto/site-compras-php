@@ -103,7 +103,7 @@ const getPlacaById = id => {
 }
 
 const getCurrentUser = () => {
-    return getCookie('UsuarioL') || ""
+    return getCookie('user_name') || ""
 }
 
 const getUserById = (email) =>{
@@ -444,15 +444,15 @@ const onLoadBadges = () => {
     const botaoSair = document.getElementById('exit_user');
 
     const currentUser = getCurrentUser()
+    console.log(currentUser)
 
     if (currentUser != '') {
-        user = getUserById(currentUser)
-        userName.innerText = user.nome
+        userName.innerText = currentUser
         userLink.href = 'index.html'
 
     } else {
         userName.innerText = 'Login'
-        userLink.href = 'formLogin.html'
+        userLink.href = 'formLogin.php'
         botaoSair.innerHTML = '';
     }
 }
@@ -992,7 +992,7 @@ if(formula.Csenha.value != formula.senha.value){
 //console.log(formula.senha.value);
 if(salvarUsuario(formula.firstName.value, formula.email.value, formula.senha.value)==1){
     document.getElementById(`cadastroSucesso`).innerHTML ='CADASTRO REALIZADO COM SUCESSO!';
-    window.location.assign('formLogin.html');
+    window.location.assign('formLogin.php');
 }
 
 }

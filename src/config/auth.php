@@ -2,7 +2,7 @@
 session_start();
 
 function isLoggedIn() {
-    return isset($_SESSION['user_id']);
+    return isset($_SESSION['admin_id']);
 }
 
 function login($username, $password) {
@@ -12,7 +12,7 @@ function login($username, $password) {
     $user = $stmt->fetch();
 
     if ($user && password_verify($password, $user['senha'])) {
-        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['admin_id'] = $user['id'];
         return true;
     } else {
         return false;

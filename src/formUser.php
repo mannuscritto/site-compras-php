@@ -137,34 +137,34 @@
 					<!-- /ghost -->	
 					</div>
 					<div class="col-md-8">
-						<form name="formulario" action="" method="POST" onsubmit="">
+						<form name="formulario" action="controllers/formUserController.php" method="POST">
 							<!-- Billing Details -->
 						<div class="billing-details" name="divInterna" id="divInterna">
 							<div class="section-title">
 								<h3 class="title">Cadastro do cliente</h3>
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="firstName" id="firstName" placeholder="Nome Completo" >
+								<input class="input" type="text" name="nomecompleto" id="firstName" placeholder="Nome Completo" required>
 							</div>
 								<div class="section-title" id="erroNome"></div>
 						
 							<div class="form-group">
-								<input class="input" type="email" name="email" id="email" placeholder="Email" >
+								<input class="input" type="email" name="email" id="email" placeholder="Email" required>
 							</div>
 								<div class="section-title" id="erroEmail"></div>
 
 							<div class="form-group">
-								<input class="input" type="password" name="senha" id="senha" placeholder="Senha" >
+								<input class="input" type="password" name="senha" id="senha" placeholder="Senha" requried>
 							</div>
 								<div class="section-title" id="erroSenha"></div>
 							
 							<div class="form-group">
-								<input class="input" type="password" name="Csenha" id="Csenha" placeholder="Confirme a senha">
+								<input class="input" type="password" name="cSenha" id="Csenha" placeholder="Confirme a senha" required>
 							</div>
 								<div class="section-title" id="erroCsenha"></div>
 							<div class="section-title" id="cadastroSucesso"></div>
 							
-							<input type="button" onclick="verificarUsuarios()" class="primary-btn order-submit" name="btnEnviar" id="btnEnviar" value="Cadastrar">
+							<input type="submit" class="primary-btn order-submit" name="btnEnviar" id="btnEnviar" value="Cadastrar">
 							
 						</div>
 						<!-- /Billing Details -->
