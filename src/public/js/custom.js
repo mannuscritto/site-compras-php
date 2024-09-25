@@ -468,14 +468,16 @@ const limparCarrinho = (e) => {
 
 const montarTabela = (tabela, total) => {
     let produtos = getLocalStorageItem('carrinho') || new Array()
-    const user = getCurrentUser()
+    //const user = getCurrentUser()
 
-    produtos = produtos.filter(p => p.user == user)
+    //produtos = produtos.filter(p => p.user == user)
 
     let precoTotal = 0
     
     let itens = produtos.map(function(cartItem) {
-        produto = getPlacaById(cartItem.id)
+        const produto = getPlacaById(cartItem.id)
+        if (produto === null)
+            return
         let preco = (produto.preco_base * (1 - (produto.desconto / 100)) * cartItem.quant)
         precoTotal += preco
         return `<div class="order-col">
