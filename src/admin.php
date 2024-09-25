@@ -2,10 +2,10 @@
     require_once 'config/auth.php';
 
     if (!isLoggedIn()) {
-        header('Location: views/login.php');
+        header('Location: admin/login.php');
         exit;
     } else {
-        header('Location: views/dashboard.php');
+        header('Location: admin/dashboard.php');
         exit;
     }
 ?>

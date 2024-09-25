@@ -217,7 +217,7 @@ const loadProducts = async () => {
             if (marca.id == produto.fabricante)
                 produto.fabricante = marca.nome
         }
-        produto.preco_base = parseFloat(produto.preco_base.replace('.', '').replace(',', '.'))
+        //produto.preco_base = parseFloat(produto.preco_base.replace('.', '').replace(',', '.'))
         produto.imagens = JSON.parse(produto.imagens)
         produto.notas = JSON.parse(produto.notas)
     }
@@ -508,7 +508,7 @@ const mostrarRecomendadas = (container) => {
 }
 
 const mostrarDescontos = (container) => {
-    const placasTotal = getLocalStorageItem('placas').placas
+    const placasTotal = getLocalStorageItem('placas')
     const placas = placasTotal.slice(4, 12)
 
     mostrarProdutos(placas, container, 'Com Desconto', 3)

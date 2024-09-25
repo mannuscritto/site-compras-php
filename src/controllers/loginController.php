@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['senha'];
 
     if (login($username, $password)) {
-        header('Location: ../views/dashboard.php');
+        header('Location: ../admin/dashboard.php');
         exit;
     } else {
         echo "Usuário ou senha inválidos.";

@@ -56,26 +56,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') { // Se a chamada for pelo método GET
 }
 
 function browse_product() { // função que carrega os produtos do banco e retorna como um vetor de objetos
-    include '../db.php';
+    include '../config/db.php';
 
     $sql = "SELECT * FROM produto";
-    $result = $conn->query($sql);
+    $result = $pdo->query($sql);
 
-    if ($result->num_rows > 0) {
-        $listOfProducts = array();
+    if ($result->rowCount() > 0) {
+        //$listOfProducts = array();
 
-        while ($row = $result->fetch_assoc()) {
-            $listOfProducts[] = $row;
-        }
+        //while ($row = $result->fetchAll(PDO::FETCH_ASSOC)) {
+            //$listOfProducts[] = $row;
+        //}
 
-        return $listOfProducts;
+        //return $listOfProducts;
+        return $result->fetchAll(PDO::FETCH_ASSOC);
     } else {
         echo null;
     }
 }
 
 function read_product($id) {
-    include '../db.php';
+    include '../config/db.php';
 
     $sql = "SELECT * FROM produto WHERE id = '$id'";
     $result = $conn->query($sql);
@@ -88,7 +89,7 @@ function read_product($id) {
 
 // Função que recebe o id do produto a ser alterado e os novos dados
 function edit_product($id, $oldData, $newData) {
-    include '../db.php';
+    include '../config/db.php';
 
     // Array para armazenar os campos alterados
     $updates = [];
@@ -118,7 +119,7 @@ function edit_product($id, $oldData, $newData) {
 
 // Função que recebe novos dados e adiciona um novo produto
 function add_product($newData) {
-    include '../db.php';
+    include '../config/db.php';
 
     $values = [];
     foreach ($newData as $value) {
@@ -140,7 +141,7 @@ function add_product($newData) {
 
 // Função que recebe um id e deleta o produto
 function delete_product($id) {
-    include '../db.php';
+    include '../config/db.php';
 
     $sql = "DELETE from produto WHERE id = '$id'";
     if ($conn->query($sql) === true) {
