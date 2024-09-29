@@ -16,9 +16,9 @@
             <li>
                 <label for="cCategoria">Categoria</label>
                 <select name="tCategoria" id="cCategoria">
-                    <option value="1">HIGH END</option>
-                    <option value="2">MID END</option>
-                    <option value="3">LOW END</option>
+                    <option value="1">Categoria 1</option>
+                    <option value="2">Categoria 2</option>
+                    <option value="3">Categoria 3</option>
                 </select>
             </li>
             <li>

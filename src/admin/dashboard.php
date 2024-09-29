@@ -1,3 +1,14 @@
+<?php
+
+require_once '../config/auth.php';
+
+if (!isLoggedIn()) {
+    header('Location: admin/login.php');
+    exit;
+}
+
+?>
+
 <html lang="pt-br">
     <head>
         <title>Painel de Administração</title>
@@ -12,13 +23,15 @@
             <section>
             <span><a target='_blank' href='http://localhost:8080/'>Acesse PHPMyAdmin</a></p></span>
             </section>
-            <span>Graphik</span>
+            <span>Produtos</span>
             <ul>
                 <li><a href="./produtos/">Ver Produtos</a></li>
                 <li><a href="./produtos/adicionar.php">Adicionar Produto</a></li>
-                <li>Editar Produto</li>
-                <li>Excluir Produto</li>
-            </ul>            
+            </ul
+            <span>Pedidos</span>
+            <ul>
+                <li><a href="./pedidos/">Ver Pedidos</a></li>
+            </ul>           
         </nav>
     </body>
 </html>
