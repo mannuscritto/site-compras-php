@@ -487,7 +487,7 @@ const mostrarRecomendadas = (container) => {
     const placasTotal = getLocalStorageItem('placas')
     const placas = placasTotal.slice(0, 4)
 
-    mostrarProdutos(placas, container, 'Recomendadas', 3)
+    mostrarProdutos(placas, container, 'Recomendados', 3)
 }
 
 const mostrarDescontos = (container) => {
