@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if (!createOrderItem($order_item_data)) {
                     echo "Falha ao cadastrar itens de pedido";
                 }
-                header('Location: ../index.php');
+                header('Location: ../orderPayment.php?id=' . $pedido['id']);
             }
         } else {
             echo "Falha ao realizar o pedido!";

@@ -26,7 +26,9 @@ services:
       - db
 
   web:
-    image: php:8.1-apache
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: php-web
     volumes:
       - ./src:/var/www/html
@@ -38,6 +40,4 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: R{MYSQL_PASSWORD}
-    command: >
-      bash -c "docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable mysqli && apache2-foreground"
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
