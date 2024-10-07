@@ -9,7 +9,7 @@
             }
             body {
                 background-image: url('pedido-bg.jpeg');
-                
+                background-size: contain;
                 color: white;
                 margin: 0;
             }
