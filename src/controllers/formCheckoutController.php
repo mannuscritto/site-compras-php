@@ -27,13 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $order_items = $_POST['produtos'];
     
     $endereco = createAddress($address);
-    if ($endereco['id'] != null) {
-        $order['endereco_id'] = $endereco['id'];
+    if ($endereco != null) {
+        $order['endereco_id'] = $endereco;
         $pedido = createOrder($order);
-        if ($pedido['id'] != null) {
+        if ($pedido != null) {
             foreach ($order_items as $order_item) {
                 $order_item_data = array(
-                    "pedido_id" => $pedido['id'],
+                    "pedido_id" => $pedido,
                     "produto_id" => $order_item['id'],
                     "quantidade" => $order_item['quant'],
                     "preco_unitario" => $order_item['preco'],
@@ -42,8 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if (!createOrderItem($order_item_data)) {
                     echo "Falha ao cadastrar itens de pedido";
                 }
-                header('Location: ../orderPayment.php?id=' . $pedido['id']);
             }
+            header('Location: ../orderPayment.php?id=' . $pedido);
         } else {
             echo "Falha ao realizar o pedido!";
         }

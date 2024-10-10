@@ -24,6 +24,8 @@ window.onload = async () => {
         }
     } else if (window.location.pathname.includes('favoritos')) {
         carregarFavoritos()
+    } else if (window.location.pathname.includes('orderPayment')) {
+        limparCarrinho();
     }
 
     onClickFavoritar()
@@ -439,12 +441,7 @@ const onLoadBadges = () => {
 }
 
 const limparCarrinho = (e) => {
-    let allCart = getLocalStorageItem('carrinho')
-    let userCart = allCart.filter(p => p.user == getCurrentUser())
-
-    for (const product of userCart) {
-        localStorageSpliceItem('carrinho', product)
-    }
+    setLocalStorageItem('carrinho', [])
 }
 
 const montarTabela = (tabela, total) => {
