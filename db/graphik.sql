@@ -2,9 +2,9 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: db
--- Tempo de geração: 29/09/2024 às 15:00
--- Versão do servidor: 11.5.2-MariaDB-ubu2404
+-- Host: mysql
+-- Tempo de geração: 10/10/2024 às 15:03
+-- Versão do servidor: 9.0.1
 -- Versão do PHP: 8.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `usuario` varchar(20) NOT NULL,
-  `senha` varchar(100) NOT NULL
+  `id` int UNSIGNED NOT NULL,
+  `usuario` varchar(20) COLLATE latin1_general_ci NOT NULL,
+  `senha` varchar(100) COLLATE latin1_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
@@ -47,10 +47,10 @@ INSERT INTO `admin` (`id`, `usuario`, `senha`) VALUES
 --
 
 CREATE TABLE `enderecos` (
-  `id` int(11) NOT NULL,
-  `usuario_id` uuid NOT NULL,
+  `id` int UNSIGNED NOT NULL,
+  `usuario_id` int UNSIGNED NOT NULL,
   `tipo` enum('residencial','comercial','outro') NOT NULL DEFAULT 'residencial',
-  `padrao` tinyint(1) NOT NULL DEFAULT 0,
+  `padrao` tinyint(1) NOT NULL DEFAULT '0',
   `nome` varchar(100) NOT NULL,
   `endereco` varchar(255) NOT NULL,
   `complemento` varchar(255) NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE `enderecos` (
   `estado` varchar(50) NOT NULL,
   `cep` varchar(20) NOT NULL,
   `pais` varchar(50) NOT NULL DEFAULT 'Brasil'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -68,13 +68,13 @@ CREATE TABLE `enderecos` (
 --
 
 CREATE TABLE `itens_pedido` (
-  `id` int(11) NOT NULL,
-  `pedido_id` int(11) NOT NULL,
-  `produto_id` uuid NOT NULL,
-  `quantidade` int(11) NOT NULL,
+  `id` int UNSIGNED NOT NULL,
+  `pedido_id` int UNSIGNED NOT NULL,
+  `produto_id` int UNSIGNED NOT NULL,
+  `quantidade` int NOT NULL,
   `preco_unitario` decimal(10,2) NOT NULL,
   `subtotal` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -83,12 +83,12 @@ CREATE TABLE `itens_pedido` (
 --
 
 CREATE TABLE `pedidos` (
-  `id` int(11) NOT NULL,
-  `usuario_id` uuid NOT NULL,
-  `endereco_id` int(11) NOT NULL,
-  `data_pedido` timestamp NOT NULL DEFAULT current_timestamp(),
+  `id` int UNSIGNED NOT NULL,
+  `usuario_id` int UNSIGNED NOT NULL,
+  `endereco_id` int UNSIGNED NOT NULL,
+  `data_pedido` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `total` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -97,28 +97,39 @@ CREATE TABLE `pedidos` (
 --
 
 CREATE TABLE `produto` (
-  `id` uuid NOT NULL DEFAULT uuid(),
+  `id` int UNSIGNED NOT NULL,
   `modelo` varchar(30) NOT NULL,
-  `categoria` int(11) NOT NULL,
+  `categoria` int NOT NULL,
   `preco_base` float NOT NULL,
-  `desconto` int(11) NOT NULL,
-  `fabricante` int(11) NOT NULL,
+  `desconto` int NOT NULL,
+  `fabricante` int NOT NULL,
   `imagens` varchar(1000) NOT NULL DEFAULT '[]',
   `descricao` varchar(200) DEFAULT NULL,
   `notas` varchar(30) NOT NULL DEFAULT '[3,10,4,150,41]',
-  `estoque` int(11) NOT NULL,
-  `novo` tinyint(1) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `estoque` int NOT NULL,
+  `novo` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Despejando dados para a tabela `produto`
 --
 
 INSERT INTO `produto` (`id`, `modelo`, `categoria`, `preco_base`, `desconto`, `fabricante`, `imagens`, `descricao`, `notas`, `estoque`, `novo`) VALUES
-('3110c473-7daa-11ef-85ad-0242ac120002', 'A MAIS MAIS', 3, 850.35, 15, 1, '[\"CAMAPET.jpg\",\"CAMAPET.jpg\",\"CAMAPET.jpg\",\"CAMAPET.jpg\",\"CAMAPET.jpg\",\"CAMAPET.jpg\",\"CAMAPET.jpg\"]', 'RAÇÃO DO AMOR PARA DOGS', '[1,16,5,175,197]', 34, 0),
-('21221f1a-7100-11ef-8c90-0242ac120002', 'RTX 2070 super', 1, 1128, 0, 1, '[]', 'Uma boa placa antiga', '[3,10,4,150,41]', 1, 0),
-('b5703113-71e2-11ef-969a-0242ac120002', 'RTX 1650 Super', 1, 1299.99, 12, 5, '[]', 'Placa de Vídeo GTX 1660 Super PCYes NVIDIA GeForce, 6GB GDDR6, 192 Bits, Full Size - PA1660S6GR6DF', '[3,10,4,150,41]', 97, 0),
-('25dc4838-71e3-11ef-969a-0242ac120002', 'RTX 4060 Ti', 3, 2699.99, 12, 4, '[]', 'Placa de Vídeo RTX 4060 Ti VENTUS 3X 8G OC MSI NVIDIA GeForce, 8 GB GDDR6, DLSS, Ray Tracing', '[3,10,4,150,41]', 38, 1);
+(1, 'Lana Rhoades', 1, 520, 1, 1, '[\"Placa de vídeo MSI Geforce RTX 2070 Super.jpg\",\"Placa de vídeo MSI Geforce RTX 2070 Super 4.jpg\",\"Placa de vídeo MSI Geforce RTX 2070 Super 3.jpg\",\"Placa de vídeo MSI Geforce RTX 2070 Super 2.jpg\",\"Placa de vídeo MSI Geforce RTX 2070 Super 1.jpg\"]', 'Uma morena branquinha com os olhos lindos.', '[3,10,4,150,41]', 1, 1),
+(2, 'Abella Danger', 1, 1444, 2, 1, '[\"Placa de vídeo MSI Geforce RTX 2060 Super.jpg\",\"Placa de vídeo MSI Geforce RTX 2060 Super 4.jpg\",\"Placa de vídeo MSI Geforce RTX 2060 Super 3.jpg\",\"Placa de vídeo MSI Geforce RTX 2060 Super 2.jpg\",\"Placa de vídeo MSI Geforce RTX 2060 Super 1.jpg\"]', 'Uma novinha judia muito sexy.', '[3,10,4,150,41]', 1, 1),
+(3, 'Violet Myers', 1, 109, 3, 1, '[\"Placa de Vídeo Zotac NVIDIA Geforce RTX 2070.jpg\",\"Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 5.jpg\",\"Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 4.jpg\",\"Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 3.jpg\",\"Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 2.jpg\",\"Placa de Vídeo Zotac NVIDIA Geforce RTX 2070 1.jpg\"]', 'Uma novinha negra muito bunduda.', '[3,10,4,150,41]', 1, 1),
+(4, 'Lena Paul', 1, 560, 4, 1, '[\"Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 5.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 4.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 3.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 2.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce RTX 2060 SUPER 1.jpg\"]', 'Uma novinha loira com olhar de mil rolas.', '[3,10,4,150,41]', 1, 1),
+(5, 'Mia Khalifa', 1, 56, 5, 1, '[\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 5.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 4.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 3.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 2.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1660 Ti 1.jpg\"]', 'Uma libanesa siliconada muito gostosa.', '[3,10,4,150,41]', 1, 1),
+(6, 'Riley Reid', 2, 1681, 6, 2, '[\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1650.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 5.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 4.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 3.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 2.jpg\",\"Placa de Vídeo Zotac NVIDIA GeForce GTX 1650 1.jpg\"]', 'Uma novinha branquinha e tatuada.', '[3,10,4,150,41]', 1, 1),
+(7, 'Sara Jay', 2, 718, 7, 2, '[\"Placa de Vídeo XFX AMD Radeon RX 590.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 590 5.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 590 4.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 590 3.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 590 2.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 590 1.jpg\"]', 'Uma MILF loira muito gostosa.', '[3,10,4,150,41]', 1, 1),
+(8, 'Angela White', 3, 884, 12, 2, '[\"Placa de Vídeo XFX AMD Radeon RX 580.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 580 4.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 580 3.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 580 2.jpg\",\"Placa de Vídeo XFX AMD Radeon RX 580 1.jpg\"]', 'Uma MILF australiana branquinha peituda.', '[3,10,4,150,41]', 1, 1),
+(9, 'Ava Addams', 3, 1317, 13, 2, '[\"Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti.jpg\",\"Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 5.jpg\",\"Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 4.jpg\",\"Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 3.jpg\",\"Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 2.jpg\",\"Placa de Vídeo VGA Zotac NVIDIA GeForce RTX 2080 Ti 1.jpg\"]', 'Uma MILF com seios enormes naturais.', '[3,10,4,150,41]', 1, 1),
+(10, 'Alexis Texas', 3, 960, 15, 2, '[\"Placa de Vídeo Sapphire Radeon RX 5700XT.jpg\",\"Placa de Vídeo Sapphire Radeon RX 5700XT 5.jpg\",\"Placa de Vídeo Sapphire Radeon RX 5700XT 4.jpg\",\"Placa de Vídeo Sapphire Radeon RX 5700XT 3.jpg\",\"Placa de Vídeo Sapphire Radeon RX 5700XT 2.jpg\",\"Placa de Vídeo Sapphire Radeon RX 5700XT 1.jpg\"]', 'Uma MILF loira com uma bunda enorme.', '[3,10,4,150,41]', 1, 1),
+(11, 'Cory Chase', 1, 723, 16, 3, '[\"Placa de Vídeo Sapphire AMD Radeon RX 590.jpg\",\"Placa de Vídeo Sapphire AMD Radeon RX 590 4.jpg\",\"Placa de Vídeo Sapphire AMD Radeon RX 590 3.jpg\",\"Placa de Vídeo Sapphire AMD Radeon RX 590 2.jpg\",\"Placa de Vídeo Sapphire AMD Radeon RX 590 1.jpg\"]', 'Uma MILF loira magrinha que usa óculos.', '[3,10,4,150,41]', 1, 1),
+(12, 'Brandi Love', 1, 1075, 17, 3, '[\"Placa de Vídeo Sapphire AMD PULSE RX 5700.jpg\",\"Placa de Vídeo Sapphire AMD PULSE RX 5700 4.jpg\",\"Placa de Vídeo Sapphire AMD PULSE RX 5700 3.jpg\",\"Placa de Vídeo Sapphire AMD PULSE RX 5700 2.jpg\",\"Placa de Vídeo Sapphire AMD PULSE RX 5700 1.jpg\"]', 'Uma MILF loira peituda e muito gostosa.', '[3,10,4,150,41]', 1, 1),
+(13, 'Lisa Ann', 1, 1965, 18, 3, '[\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 4.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 3.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 2.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 590 1.jpg\"]', 'Uma MILF morena cor de oliva siliconada.', '[3,10,4,150,41]', 1, 1),
+(14, 'Piper Perri', 2, 609, 19, 3, '[\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 4.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 3.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 2.jpg\",\"Placa de Vídeo PowerColor Red Dragon AMD Radeon RX 550 1.jpg\"]', 'Uma loira branquinha bem pequena que faz muito anal.', '[3,10,4,150,41]', 1, 1),
+(15, 'Diamond Jackson', 2, 387, 20, 3, '[\"Placa de Vídeo MSI NVIDIA GeForce GTX 1660.jpg\",\"Placa de Vídeo MSI NVIDIA GeForce GTX 1660 4.jpg\",\"Placa de Vídeo MSI NVIDIA GeForce GTX 1660 3.jpg\",\"Placa de Vídeo MSI NVIDIA GeForce GTX 1660 2.jpg\",\"Placa de Vídeo MSI NVIDIA GeForce GTX 1660 1.jpg\"]', 'Uma MILF negra muito gostosa.', '[3,10,4,150,41]', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -127,26 +138,26 @@ INSERT INTO `produto` (`id`, `modelo`, `categoria`, `preco_base`, `desconto`, `f
 --
 
 CREATE TABLE `usuarios` (
-  `id` uuid NOT NULL DEFAULT uuid(),
+  `id` int UNSIGNED NOT NULL,
   `nome_completo` varchar(200) NOT NULL,
   `email` varchar(100) NOT NULL,
   `senha` varchar(255) NOT NULL,
   `telefone` varchar(20) DEFAULT NULL,
   `data_nascimento` date DEFAULT NULL,
-  `data_registro` timestamp NOT NULL DEFAULT current_timestamp(),
+  `data_registro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ultimo_login` timestamp NULL DEFAULT NULL,
   `status` enum('ativo','inativo') NOT NULL DEFAULT 'ativo',
   `nivel_acesso` enum('usuario','admin') NOT NULL DEFAULT 'usuario',
   `token_recuperacao_senha` varchar(255) DEFAULT NULL,
   `data_expiracao_token` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Despejando dados para a tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome_completo`, `email`, `senha`, `telefone`, `data_nascimento`, `data_registro`, `ultimo_login`, `status`, `nivel_acesso`, `token_recuperacao_senha`, `data_expiracao_token`) VALUES
-('78a0fad8-7b4e-11ef-b88e-0242ac120002', 'João Henrique Romero', 'romerocontato1@gmail.com', '$2y$10$Ia0Auhyy4dKcxZlY0KtEMedIpDFKowc0ZBitId0tlZrhbiD5sAybu', NULL, NULL, '2024-09-25 14:57:23', NULL, 'ativo', 'usuario', NULL, NULL);
+(1, 'James Sunderland', 'james.sun@shill.com', '$2y$10$KbTTfeSxpeIfk6865cit6e8drO0Z.LCUG0K70r1BELNohWV3YgmHq', NULL, NULL, '2024-10-10 13:56:02', NULL, 'ativo', 'usuario', NULL, NULL);
 
 --
 -- Índices para tabelas despejadas
@@ -202,25 +213,37 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `enderecos`
 --
 ALTER TABLE `enderecos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `itens_pedido`
 --
 ALTER TABLE `itens_pedido`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de tabela `produto`
+--
+ALTER TABLE `produto`
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restrições para tabelas despejadas
@@ -236,15 +259,15 @@ ALTER TABLE `enderecos`
 -- Restrições para tabelas `itens_pedido`
 --
 ALTER TABLE `itens_pedido`
-  ADD CONSTRAINT `itens_pedido_ibfk_1` FOREIGN KEY (`pedido_id`) REFERENCES `pedidos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `itens_pedido_ibfk_2` FOREIGN KEY (`produto_id`) REFERENCES `produto` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `itens_pedido_ibfk_2` FOREIGN KEY (`produto_id`) REFERENCES `produto` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `itens_pedido_pedido_id` FOREIGN KEY (`pedido_id`) REFERENCES `pedidos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Restrições para tabelas `pedidos`
 --
 ALTER TABLE `pedidos`
-  ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`endereco_id`) REFERENCES `enderecos` (`id`);
+  ADD CONSTRAINT `pedido_endercos` FOREIGN KEY (`endereco_id`) REFERENCES `enderecos` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
